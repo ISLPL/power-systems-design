@@ -1,0 +1,3138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Power Systems Design (PSD) Information to Power Your Designs</title>
+<meta name="keywords" content="Power Consumer">
+<meta name="description" content="Power Systems Design (PSD) empowers global innovation for the power electronic design engineering community by providing in-depth editorial content focused on helping the design engineering professionals with their latest product designs. ">
+    <meta name="google-site-verification" content="xrnvfF-isiFB-311SuCoxYYF58CcWEcTfp4ftZRYxlo" />
+    <meta name="msvalidate.01" content="3A1D57DD9EB5602CF3FCE943D5169742" />
+    <meta name="googlebot" content="index,follow" />
+    <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../lightbox.css">
+<link rel="shortcut icon" href="../favicon.ico" />
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script async src="../functions.js"></script>
+<script type="text/javascript" async src="../lightbox.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+<style type="text/css">
+  #skyscraper_div1.affix{
+   position: fixed !important;
+   top: 0;
+  } 
+#skyscraper_div2.affix{
+   position: fixed !important;
+   top: 0;
+  }
+
+ a img.twitter-img {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    padding: 8px;
+}
+.hidden_mobile_ad {
+    display: none !important;
+}
+.show_mobile_ad {
+    display: block;
+}
+.header_google_pic_row{
+  float: left;max-width: 100%;margin: 0 auto;
+  margin-left: 3% !important;
+}
+.psd-logo-new{
+    max-height: 65px;
+  }
+@media (max-width:1200px){
+  .header_google_pic_row{
+    margin-left: 0 !important;
+  }
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+@media (max-width:991px){
+  .header_google_pic_row{
+    text-align: center;
+    float:initial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header_google_pic_row a img {
+    max-width: 250px !important;
+    max-height: 350px;
+  }
+
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+@media (max-width:530px){
+  .large-scr-home-img{
+    display:none !important;
+  }
+  .mobile-home-img{
+    display:block !important;
+  }
+
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+#timertext1
+{
+    text-decoration: none;
+    color: #bf1e2d !important;
+    /*color: blue !important;*/
+    font-size:12px;
+}
+#timertext2
+{
+    text-decoration: none;
+    color: #bf1e2d !important;
+    /*color: blue !important;*/
+    font-size:12px;
+}
+</style>
+<!--Google Analytics Starts-->
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-98130312-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>-->
+<!--Google Analytics Ends-->
+
+<!-- Global site tag (gtag.js)-UA - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109372145-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109372145-1');
+</script> -->
+<!--Google Analytics Ends-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HEQDKYX7YT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HEQDKYX7YT');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52Q28F9');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDLQrGImMhND3bjikM51H7Kog08X7n6_Is",
+    authDomain: "powersystemsdesign-f2b5e.firebaseapp.com",
+    projectId: "powersystemsdesign-f2b5e",
+    storageBucket: "powersystemsdesign-f2b5e.appspot.com",
+    messagingSenderId: "371490424969",
+    appId: "1:371490424969:web:7cb3149f3c4f867eeb9e58",
+    measurementId: "G-WKJT76YHZL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+// function closetimer1() {
+//    $(".welcome_desktop").css("display","none");
+// }
+// function closetimer2() {
+//    $(".welcome_desktop").css("display","none");
+// }
+// function closetimer3() {
+//    $(".welcome_mobile").attr("style", "display: none !important");
+// }
+// function closetimer4() {
+//    $(".welcome_mobile").attr("style", "display: none !important");
+// }
+//   function closetimer1()
+// {
+//     $(".welcome_desktop").css("display","none");
+// }
+// function closetimer2(){
+//   //alert("coming");
+//     $(".welcome_mobile").attr("style", "display: none !important");
+// }
+</script>
+<!--Google DFP Starts-->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+    googletag.defineSlot('/60559764/Welcome_640x480', [640, 480], 'div-gpt-ad-1450361267255-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Leaderboard_728x90', [728, 90], 'div-gpt-ad-1478261167170-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Left-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1493733425607-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1478606513268-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Left-Tile_160x160', [160, 160], 'div-gpt-ad-1450361781743-3').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Left-Skyscrapper_160_600', [160, 600], 'div-gpt-ad-1493964541272-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Rectangle_300x250', [300, 250], 'div-gpt-ad-1450361781743-5').addService(googletag.pubads());    
+    googletag.defineSlot('/60559764/Right-Tile_160x160', [160, 160], 'div-gpt-ad-1450361781743-7').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Search-Box-Logo_154x45', [154, 45], 'div-gpt-ad-1450361781743-8').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Leaderboard_728x90', [728, 90], 'div-gpt-ad-1450361781743-9').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Left-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1450361781743-10').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Rectangle_300x250', [300, 250], 'div-gpt-ad-1450361781743-11').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1481637681160-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1479134058447-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/wallpaper_skyscrapper_left_96x668', [120, 660], 'div-gpt-ad-1484319980338-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/wallpaper_skyscrapper_right_96x668', [120, 660], 'div-gpt-ad-1484319980338-1').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Wallpaper-Top-Skyscrapper_1050x90', [1058, 90], 'div-gpt-ad-1484208183654-2').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Rectangle_300x250', [300, 250], 'div-gpt-ad-1525162576522-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Leaderboard_360x60', [360, 60], 'div-gpt-ad-1553857733721-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_First_360X60', [360, 60], 'div-gpt-ad-1553863928206-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Second_360X60', [360, 60], 'div-gpt-ad-1553864402204-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Third', [360, 60], 'div-gpt-ad-1553864542641-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Fourth_360x60', [360, 60], 'div-gpt-ad-1554371562719-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Welcome_Banner_Mobile_250_250', [250, 250], 'div-gpt-ad-1678796604493-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_250_250_1', [250, 250], 'div-gpt-ad-1702294348598-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_250_250_2', [250, 250], 'div-gpt-ad-1702294487880-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_500_250', [500, 250], 'div-gpt-ad-1702294858993-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Welcome_New_640x480', [640, 480], 'div-gpt-ad-1711602811938-0').addService(googletag.pubads());
+
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!--Google DFP Code Ends-->
+</head>
+<body class="usualbodyclass">
+<!-- <iframe style="width: 100%;height: 15px;background-color: darkviolet;border: 0px;"></iframe> -->
+
+<div id="carousel-example-generic" style="display: none; background-color: #bf1e2e;" class="carousel topSlide slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox" style="max-width: 360px;margin: 0 auto;">
+    <!--<div class="item active">
+          </div>-->
+    <!--<div class="item">
+          </div>-->
+    <div class="item active">
+      <center><!-- /60559764/MobileResponsive_Ad_Third -->
+<div id='div-gpt-ad-1553864542641-0' style='height:60px; width:360px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1553864542641-0'); });
+</script>
+</div></center>    </div>
+    <div class="item">
+      <center><!-- /60559764/MobileResponsive_Ad_Fourth_360x60 -->
+<div id='div-gpt-ad-1554371562719-0' style='height:60px; width:360px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1554371562719-0'); });
+</script>
+</div></center>    </div>
+  </div>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52Q28F9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=387548664734018&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<style type="text/css">
+    .ad-show {
+        display: block !important;
+    }
+    .ad-hide {
+        display: none !important;
+    }
+    
+    /* Fixed positioning for mobile ads */
+    .welcome_mobile {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        z-index: 9999;
+        display: none;
+    }
+    
+    .welcome_desktop {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        z-index: 9999;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .welcome_mobile {
+            width: 90vw;
+            max-width: 300px;
+        }
+        
+        .welcome_mobile div[id*='div-gpt-ad'] {
+            width: 100% !important;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<script>
+    function closetimer1() {
+        $("#welcome-ad-wrapper1").hide();
+        ad1_seconds = 0;
+    }
+
+    function closetimer3() {
+        $('#welcome-ad-wrapper3').hide();
+        ad3_seconds = 0;
+    }
+</script>
+
+
+
+
+
+
+
+<section class="headerlogout">
+   <div class="container">
+            
+      
+       
+
+         </div>
+</section>
+<section class="langConvertor">
+  <div class="container">
+    <div class="col-md-5 col-sm-5">
+      <div class="socialHeader">
+        <ul>
+          <li><a href="https://www.facebook.com/PowerSystemsDesign/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/powersystemsdesign/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/PSD_Global" target="_blank"><img class="twitter-img" src="../twitter_images/logo.svg"></a></li>
+          <li><a href="https://www.linkedin.com/company/powersystemsdesign/about/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="../psdcast/67.html" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="../rss-feeds.html"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <ul class="langList">
+        <li><a href="https://www.powersystemsdesign.com/">English</a></li>
+        <li><a href="https://www.powersystemsdesignchina.com/">中国 China</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <form name="headerSearchForm" id="headerSearchForm" method="get" action="https://www.powersystemsdesign.com/search-results">
+        <div class="form-group">
+          <div class="input-group">
+              <input class="form-control" name="headerSearch" id="headerSearch" required="required" placeholder="Search" type="text" value="">
+              <span class="input-group-addon" style="background: #bf1e2e;">
+                <input type="submit" value="" style="    margin-left: -5px;width:30px;background: transparent url('../searchicon.png') no-repeat center center;background-size:16px;" id="headerSearchButton"><!-- <i class="fa fa-search"></i> -->
+              </span>        
+          </div>
+        </div>
+       </form>  
+    </div>
+  </div>
+</section>
+
+<style type="text/css">
+.relPstn{
+  position: relative;
+}
+.leftFixAd {
+  position: absolute;
+  left: -130px;
+  z-index: 99;
+}
+.rightFixAd {
+  position: absolute;
+  right: -133px;
+  top: 0;
+  z-index: 99;
+}
+.leftFixAd + div {
+  margin-left: -10px;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1090px;
+}
+}
+@media(max-width: 1199px){
+  .relPstn{
+    display: none;
+  } 
+}
+
+</style>
+<section class="headerAd">
+   <div class="container">
+      <div class="relPstn">
+         <div class="leftFixAd">      
+             
+            <!-- <div id='div-gpt-ad-1484319980338-0' style='height:660px; width:120px; display: block;'>
+               <script>
+               googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484319980338-0'); });
+               </script>
+            </div> -->
+                     </div>
+          
+            <div>
+                
+              
+               <!-- <div id='div-gpt-ad-1484208183654-2' style='height:90px; width:1058px; display: block;margin: 0 auto 20px;' >
+               <script>
+               googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484208183654-2'); });
+               </script>
+               </div>  -->
+                           </div>
+                     <div class="rightFixAd">
+                   
+            
+            <!-- <div id='div-gpt-ad-1484319980338-1' style='display: block;'>
+            <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484319980338-1'); });
+            </script>
+            </div>  -->
+                     </div>
+      </div>
+   </div>
+</section>
+
+
+<section class="header" style="">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.powersystemsdesign.com/"><img src="../psd_logo_new.jpg" class="psd-logo-new" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="../home/77.html" >Home</a></li>
+                                                <li><a href="../about-power-systems-design/2.html" >About PSD</a></li>
+                                                <li><a href="../subscribe-to-psd-magazines/4.html" >Subscribe</a></li>
+                                                <li><a href="../login-to-manage-subscription/117.html" >Manage Subscription</a></li>
+                                                <li><a href="../2024-media-information/76.html" >Media Info</a></li>
+                                                <li><a href="javascript:void(0)" onclick="dis_joinpop()">Join Newsletter</a></li>
+                                                <li><a href="../glossary/139.html" >Glossary</a></li>
+                                        </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+<div class="clearfix"></div>
+<div class="top-two showOnAdd">
+    </div>
+<!-- <div class="clearfix"></div> -->
+<div class="container"><hr></div>
+<div class="clearfix"></div>
+<section class="secMenu">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                                            <li><a class="nav-link" href="../product-news/6.html">Product News</a></li>
+                                                <li><a class="nav-link" href="../industry-news/8.html">Industry News</a></li>
+                                                 <li class="dropdown">
+                          <a href="../departments/11.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments<span class="caret"></span></a>
+                          <ul class="dropdown-menu">  
+                                                    <li><a href="../design-tips/18.html">Design Tips</a></li>
+                                                        <li><a href="../dilbert/26.html">Dilbert</a></li>
+                                                        <li><a href="../distribution/23.html">Distribution</a></li>
+                                                        <li><a href="../final-thought/131.html">Final Thought</a></li>
+                                                        <li><a href="../market-watch/17.html">MarketWatch</a></li>
+                                                        <li><a href="../notable-newsworthy/97.html">Notable & Newsworthy</a></li>
+                                                        <li><a href="../technical-features/22.html">Technical Features</a></li>
+                                                        <li><a href="../tech-talk/149.html">TechTalk</a></li>
+                                                        <li><a href="../view-point/14.html">ViewPoint</a></li>
+                                                    </ul>
+                        </li>
+                                                 <li class="dropdown">
+                          <a href="../design-centers/27.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Design Centers<span class="caret"></span></a>
+                          <ul class="dropdown-menu">  
+                                                    <li><a href="../automotive-transportation/35.html">Automotive & Transportation</a></li>
+                                                        <li><a href="../batteries-other-energy-storage-devices/145.html">Batteries & Other Energy Storage Devices</a></li>
+                                                        <li><a href="29.html">Consumer</a></li>
+                                                        <li><a href="../data-centers/140.html">Data Centers</a></li>
+                                                        <li><a href="../ev-hybrids-and-charging-infrastructure/154.html">EV, Hybrids & Charging Infrastructure</a></li>
+                                                        <li><a href="../industrial/39.html">Industrial</a></li>
+                                                        <li><a href="../internet-of-things/109.html">IoT & Smart Cities</a></li>
+                                                        <li><a href="../lighting-illumination/36.html">Lighting & Illumination</a></li>
+                                                        <li><a href="../medical-healthcare-wellness/33.html">Medical, Healthcare & Wellness</a></li>
+                                                        <li><a href="../military-aerospace-hi-rel/95.html">Military, Aerospace & Hi-Rel</a></li>
+                                                        <li><a href="../design-center-motor-drives-robotics-controls/30.html">Motor Drives, Robotics & Controls</a></li>
+                                                        <li><a href="../power-modules/155.html">Power Modules</a></li>
+                                                        <li><a href="../power-semiconductors/146.html">Power Semiconductors</a></li>
+                                                        <li><a href="../power-supplies-magnetics/135.html">Power Supplies</a></li>
+                                                        <li><a href="../powering-ai/159.html">Powering AI</a></li>
+                                                        <li><a href="../powering-communications/32.html">Powering Communications</a></li>
+                                                        <li><a href="../embedded-power/132.html">Powering Embedded Systems</a></li>
+                                                        <li><a href="../renewable-energy/28.html">Renewable Energy</a></li>
+                                                        <li><a href="../smart-power-grid/34.html">Smart Power Grid</a></li>
+                                                        <li><a href="../test-measurement/93.html">Test & Measurement</a></li>
+                                                        <li><a href="../wearables-nanopower/136.html">Wearables & Nanopower</a></li>
+                                                        <li><a href="../white-goods/37.html">White Goods</a></li>
+                                                        <li><a href="../wide-bandgap-semis/138.html">Wide-Bandgap Semis</a></li>
+                                                    </ul>
+                        </li>
+                                                <li><a class="nav-link" href="../psdcast/67.html">PSDcast</a></li>
+                                                <li><a class="nav-link" href="../psdwebinar/125.html">PSDwebinar</a></li>
+                                                <li><a class="nav-link" href="../digital-magazines/73.html">Digital Magazines</a></li>
+                                                <li><a class="nav-link" href="../editor-blogs/133.html">Editor Blogs</a></li>
+                                        </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+<div class="clearfix"></div>
+<div class="container"><hr></div>
+<div class="clearfix"></div>
+<section class="breadCrumbs_section">
+   <div class="container">
+            <ol class="breadcrumb text-left">
+            <li><a href="../home.html">Home</a></li>
+                           <li><a href="../design-centers/27.html">Design Centers</a></li>
+                           <li class="active">Consumer</li>
+         </ol>
+            </div>
+</section>
+<section class="middle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-3 text-center advertHd">
+         <div id="skyscraper_div1">
+                      
+                  <div valign="top" class="column1">
+                    <p>&nbsp;</p>
+                    <!-- /60559764/Top-Left-Skyscraper_160x600 -->
+<div id='div-gpt-ad-1450361781743-10' style='height:600px; width:160px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-10'); });
+</script>
+</div>
+<br>                    <p>&nbsp;</p>
+                  </div>
+                       </div>
+        
+
+       <!--  <img class="img-responsive" src="/images/3.jpeg"> -->
+      </div>
+      <div class="col-md-8 col-sm-6">
+                  <div valign="top" class="column2">
+                              <p>&nbsp;</p>
+                    <center> <!-- /60559764/Top-Rectangle_300x250 -->
+<div id='div-gpt-ad-1450361781743-11' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-11'); });
+</script>
+</div></center>
+                        </div>
+        <!-- /60559764/Search-Box-Logo_154x45 -->
+<div id='div-gpt-ad-1450361781743-8' style='height:45px; width:154px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-8'); });
+</script>
+</div>            <div>
+<div class="middle-table">
+<div class="pm-inner">
+    <h1 class="page-title">Consumer</h1>
+</div>  
+
+<div id="pmBlog" class="pm100">
+<div class="pm-inner">                      
+<div class="blog-subtype">
+Current</div>
+<!-- Start of Advertise Article -->
+
+
+<!-- End of Advertise Article -->
+                      
+<!-- blog-subtype -->
+<div class="column-blog-inner">
+<div class="row">
+<div class="col-md-4">                  
+<div class="column-blog-pic">
+<div class="column-blog-pic-inner"><a href="https://www.powersystemsdesign.com/articles/chromasens-launches-new-flagship-of-allpixa-evo-line-scan-camera-series/29/23046"><img class="img-responsive" name="pic" src="../articles/1757527961-Y02WQq0d.jpeg" loading="lazy" border="0" alt="Chromasens Launches New Flagship of allPIXA evo Line-Scan Camera Series"></a><br>
+              
+                <div class="ss-caption"><p class="firstP">Chromasens allPIXA evo 32k</p>
+                </div>
+                              
+</div> <!-- column-blog-pic-inner -->
+</div> <!-- column-blog-pic -->
+</div>
+<div class="col-md-8">                    
+<div class="column-blog-head">
+
+<a target="_blank" href="https://www.powersystemsdesign.com/articles/chromasens-launches-new-flagship-of-allpixa-evo-line-scan-camera-series/29/23046">Chromasens Launches New Flagship of allPIXA evo Line-Scan Camera Series</a> 
+</div>
+                  
+<div class="column-blog-text">
+
+	­Chromasens&nbsp;unveiled its new&nbsp;allPIXA evo 32k&nbsp;line-scan camera, which achieves an amazing 73 kHz line rate at full resolution by combining a CoaXPress CXP-12 four-lane interface with a CMOS multi-line 32768-pixel monochrome sensor.&nbsp;The new flagship to the company's&nbsp;allPIXA evo Series, the</b>                          
+<div class="column-feature-more">. . . <a href="https://www.powersystemsdesign.com/articles/chromasens-launches-new-flagship-of-allpixa-evo-line-scan-camera-series/29/23046" target="_blank">Learn More</a>
+</div>
+                  
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog-info">
+<div class="blog-info-date-label">
+Date: 
+</div>
+<div class="blog-info-date">
+09/10/2025</div>
+</div> 
+</div>
+</div>
+</div> <!-- column-blog-inner -->
+
+<div class="column-blog-clear"><!--  --></div>
+                      
+<!-- blog-subtype -->
+<div class="column-blog-inner">
+<div class="row">
+<div class="col-md-4">                  
+<div class="column-blog-pic">
+<div class="column-blog-pic-inner"><a href="https://www.powersystemsdesign.com/articles/tdk-presents-ultra-small-pfc-capacitors-for-space-constrained-consumer-applications/29/23043"><img class="img-responsive" name="pic" src="../articles/1757431913-Mini-PFC_B3270x_2025_press.jpg" loading="lazy" border="0" alt="TDK Presents Ultra-Small PFC Capacitors for Space-Constrained Consumer Applications"></a><br>
+              
+                <div class="ss-caption"><p class="firstP">TDK Presents Ultra-Small PFC Capacitors for Space-Constrained Consumer Applications</p>
+                </div>
+                              
+</div> <!-- column-blog-pic-inner -->
+</div> <!-- column-blog-pic -->
+</div>
+<div class="col-md-8">                    
+<div class="column-blog-head">
+
+<a target="_blank" href="https://www.powersystemsdesign.com/articles/tdk-presents-ultra-small-pfc-capacitors-for-space-constrained-consumer-applications/29/23043">TDK Presents Ultra-Small PFC Capacitors for Space-Constrained Consumer Applications</a> 
+</div>
+                  
+<div class="column-blog-text">
+
+	TDK Corporation introduces the B3270xP, a series of ultra-small, metallized polypropylene (MKP) film capacitors tailored for power factor correction (PFC) stages in power supplies for consumer electronics. With their compact design and self-healing properties, these components are engineered for use in adapters an</b>                          
+<div class="column-feature-more">. . . <a href="https://www.powersystemsdesign.com/articles/tdk-presents-ultra-small-pfc-capacitors-for-space-constrained-consumer-applications/29/23043" target="_blank">Learn More</a>
+</div>
+                  
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog-info">
+<div class="blog-info-date-label">
+Date: 
+</div>
+<div class="blog-info-date">
+09/09/2025</div>
+</div> 
+</div>
+</div>
+</div> <!-- column-blog-inner -->
+
+<div class="column-blog-clear"><!--  --></div>
+                      
+<!-- blog-subtype -->
+<div class="column-blog-inner">
+<div class="row">
+<div class="col-md-4">                  
+<div class="column-blog-pic">
+<div class="column-blog-pic-inner"><a href="https://www.powersystemsdesign.com/articles/infineons-new-ez-usb-fx2g3/29/23031"><img class="img-responsive" name="pic" src="../articles/1756919183-Figure1.png" loading="lazy" border="0" alt="Infineon’s New EZ USB™ FX2G3"></a><br>
+              
+                <div class="ss-caption"><p class="firstP">Click image to enlarge<br />
+<br />
+Figure 1: EZ-USB™ FX2G3 architecture block diagram</p>
+                </div>
+                              
+</div> <!-- column-blog-pic-inner -->
+</div> <!-- column-blog-pic -->
+</div>
+<div class="col-md-8">                    
+<div class="column-blog-head">
+
+<a target="_blank" href="https://www.powersystemsdesign.com/articles/infineons-new-ez-usb-fx2g3/29/23031">Infineon’s New EZ USB™ FX2G3</a> 
+</div>
+                  
+<div class="column-blog-text">
+
+	­Embedded designers often face trade-offs between resource-limited microcontrollers and power-hungry application processors. For devices that require sensor data processing and efficient data transmission like cameras, biometric sensors, and portable instruments, a dedicated USB device controller bridges the gap. </b>                          
+<div class="column-feature-more">. . . <a href="https://www.powersystemsdesign.com/articles/infineons-new-ez-usb-fx2g3/29/23031" target="_blank">Learn More</a>
+</div>
+                  
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog-info">
+<div class="blog-info-date-label">
+Date: 
+</div>
+<div class="blog-info-date">
+09/03/2025</div>
+</div> 
+</div>
+</div>
+</div> <!-- column-blog-inner -->
+
+<div class="column-blog-clear"><!--  --></div>
+                      
+<!-- blog-subtype -->
+<div class="column-blog-inner">
+<div class="row">
+<div class="col-md-4">                  
+<div class="column-blog-pic">
+<div class="column-blog-pic-inner"><a href="https://www.powersystemsdesign.com/articles/bourns-miniature-thermal-cutoff-mini-breaker-series-supports-new-240-watt-usb-power-delivery-standard-limit/29/23026"><img class="img-responsive" name="pic" src="../articles/1756824758-bourns_se_pr.jpg" loading="lazy" border="0" alt="Bourns Miniature Thermal Cutoff Mini-Breaker Series Supports New 240 Watt USB Power Delivery Standard Limit"></a><br>
+                  
+            <div class="ss-credit"></div>
+                          
+                <div class="ss-caption"><p class="firstP">Bourns® SE Series resettable miniature Thermal Cutoff (TCO) Mini-Breakers </p>
+                </div>
+                              
+</div> <!-- column-blog-pic-inner -->
+</div> <!-- column-blog-pic -->
+</div>
+<div class="col-md-8">                    
+<div class="column-blog-head">
+
+<a target="_blank" href="https://www.powersystemsdesign.com/articles/bourns-miniature-thermal-cutoff-mini-breaker-series-supports-new-240-watt-usb-power-delivery-standard-limit/29/23026">Bourns Miniature Thermal Cutoff Mini-Breaker Series Supports New 240 Watt USB Power Delivery Standard Limit</a> 
+</div>
+                  
+<div class="column-blog-text">
+
+	­Bourns, Inc., a leading manufacturer and supplier of&nbsp;electronic components&nbsp;for power, protection, and sensing solutions, today introduced its&nbsp;SE Series miniature Thermal Cutoff (TCO) Mini-Breaker devices&nbsp;that are designed to support 240 W, which meets the upper limit of the USB Power Delivery (P</b>                          
+<div class="column-feature-more">. . . <a href="https://www.powersystemsdesign.com/articles/bourns-miniature-thermal-cutoff-mini-breaker-series-supports-new-240-watt-usb-power-delivery-standard-limit/29/23026" target="_blank">Learn More</a>
+</div>
+                  
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog-info">
+<div class="blog-info-date-label">
+Date: 
+</div>
+<div class="blog-info-date">
+09/02/2025</div>
+</div> 
+</div>
+</div>
+</div> <!-- column-blog-inner -->
+
+<div class="column-blog-clear"><!--  --></div>
+                      
+<!-- blog-subtype -->
+<div class="column-blog-inner">
+<div class="row">
+<div class="col-md-4">                  
+<div class="column-blog-pic">
+<div class="column-blog-pic-inner"><a href="https://www.powersystemsdesign.com/articles/basics-of-tft-lcd-oled-and-micro-led-display/29/23009"><img class="img-responsive" name="pic" src="../articles/1756227409-fig-01.jpg" loading="lazy" border="0" alt="Basics of TFT LCD, OLED, and Micro-LED Display"></a><br>
+              
+                <div class="ss-caption"><p class="firstP">Click image to enlarge<br />
+<br />
+Figure 1: TFT LCD display structure</p>
+                </div>
+                              
+</div> <!-- column-blog-pic-inner -->
+</div> <!-- column-blog-pic -->
+</div>
+<div class="col-md-8">                    
+<div class="column-blog-head">
+
+<a target="_blank" href="https://www.powersystemsdesign.com/articles/basics-of-tft-lcd-oled-and-micro-led-display/29/23009">Basics of TFT LCD, OLED, and Micro-LED Display</a> 
+</div>
+<div class="column-top-byline">Yujie Bai, Senior Applications Engineer, Analog Devices<br><br>
+</div>
+                  
+<div class="column-blog-text">
+
+	­To enhance the cabin experience, modern vehicles feature multiple types of displays: the instrument cluster, the center information display (CID), heads-up display (HUD), passenger display, smart e-mirror display, side mirror display, and rear entertainment display. The instrument cluster provides the driver wi</b>                          
+<div class="column-feature-more">. . . <a href="https://www.powersystemsdesign.com/articles/basics-of-tft-lcd-oled-and-micro-led-display/29/23009" target="_blank">Learn More</a>
+</div>
+                  
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog-info">
+<div class="blog-info-date-label">
+Date: 
+</div>
+<div class="blog-info-date">
+09/01/2025</div>
+</div> 
+</div>
+</div>
+</div> <!-- column-blog-inner -->
+
+<div class="column-blog-clear"><!--  --></div>
+</div>
+</div>
+</div>
+
+
+
+
+                  
+<div class="pm-inner">
+<div class="blog-archive">
+<div class="blog-archive-head">Archives</div>
+<div class="blog-archive-item"><a href="29.html">Current</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-08-01">August 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-07-01">July 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-06-01">June 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-05-01">May 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-04-01">April 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-03-01">March 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-02-01">February 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2025-01-01">January 2025</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-12-01">December 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-11-01">November 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-10-01">October 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-09-01">September 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-08-01">August 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-07-01">July 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-06-01">June 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-05-01">May 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-04-01">April 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-03-01">March 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-02-01">February 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2024-01-01">January 2024</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-12-01">December 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-11-01">November 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-10-01">October 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-09-01">September 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-08-01">August 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-07-01">July 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-06-01">June 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-05-01">May 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-04-01">April 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-03-01">March 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-02-01">February 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2023-01-01">January 2023</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-12-01">December 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-11-01">November 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-10-01">October 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-09-01">September 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-08-01">August 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-07-01">July 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-06-01">June 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-05-01">May 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-04-01">April 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-03-01">March 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-02-01">February 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2022-01-01">January 2022</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-12-01">December 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-11-01">November 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-10-01">October 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-09-01">September 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-08-01">August 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-07-01">July 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-06-01">June 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-05-01">May 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-04-01">April 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-03-01">March 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-02-01">February 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2021-01-01">January 2021</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-12-01">December 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-11-01">November 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-10-01">October 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-09-01">September 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-08-01">August 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-07-01">July 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-06-01">June 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-05-01">May 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-04-01">April 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-03-01">March 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-02-01">February 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2020-01-01">January 2020</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-12-01">December 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-11-01">November 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-10-01">October 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-09-01">September 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-08-01">August 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-07-01">July 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-06-01">June 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-05-01">May 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-04-01">April 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-03-01">March 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-02-01">February 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2019-01-01">January 2019</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-12-01">December 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-11-01">November 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-10-01">October 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-09-01">September 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-08-01">August 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-07-01">July 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-06-01">June 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-05-01">May 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-04-01">April 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-03-01">March 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-02-01">February 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2018-01-01">January 2018</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-12-01">December 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-11-01">November 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-10-01">October 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-09-01">September 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-08-01">August 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-07-01">July 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-06-01">June 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-05-01">May 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-04-01">April 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-03-01">March 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-02-01">February 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2017-01-01">January 2017</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-12-01">December 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-11-01">November 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-10-01">October 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-09-01">September 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-08-01">August 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-07-01">July 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-06-01">June 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-05-01">May 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-04-01">April 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-03-01">March 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-02-01">February 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2016-01-01">January 2016</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-12-01">December 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-11-01">November 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-10-01">October 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-09-01">September 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-08-01">August 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-07-01">July 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-06-01">June 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-05-01">May 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-04-01">April 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-03-01">March 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-02-01">February 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2015-01-01">January 2015</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-12-01">December 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-11-01">November 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-10-01">October 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-09-01">September 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-08-01">August 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-07-01">July 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-06-01">June 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-05-01">May 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-04-01">April 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-03-01">March 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-02-01">February 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2014-01-01">January 2014</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-12-01">December 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-10-01">October 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-09-01">September 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-08-01">August 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-07-01">July 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-06-01">June 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-05-01">May 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-04-01">April 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-03-01">March 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-02-01">February 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2013-01-01">January 2013</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2012-11-01">November 2012</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2012-07-01">July 2012</a></div>
+                      
+<div class="blog-archive-item"><a href="https://www.powersystemsdesign.com/pages/consumer/29?date=2012-01-01">January 2012</a></div>
+</div>
+</div>
+                  
+
+<!--Article Content Ends-->
+
+<div class="modal fade" id="psdcastmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup_psdcast"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Subscribe To Our PSDcast Channel</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <b>Please subscribe me to PSD's PSDcast Channel and keep me abreast of PSDcast activity</b>
+        <br />
+        <div id="err_msg_psdcast" class="err" style="color: red;"></div>
+        <br />
+        <form name="psdastmodal" id="psdastmodal" method="POST">
+            <input class="psdcasttest form-control" type="text" placeholder="enter your email" name="PSDcastEmail" id="PSDcastEmail"/>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input class="nwbtn" type="button" value="Subscribe Now" onclick="PSDcastForm()" style="border: none;color: white;padding: 19px 23px 15px;font: 500 15px/15px;text-transform: uppercase;background: #bf1e2d;border-radius: 4px;" />
+      </div>
+    </div>
+  </div>
+</div>
+<!--add rating-->
+<div id="addratings" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Please Add Your feedback/Rating for our PSDcast</h3>
+            </div>
+            <div class="modal-body">
+                <form method="post" name="myformrating" id="myformrating">
+                    <h4>Please click on stars to rate</h4>
+                    <div class="rating-container" style="margin-top: 12px;">
+                        <input type="hidden" name="rating" id="reviews-rating" aria-required="true">
+                        <span class="label label-success" id="reviews-rating-label"></span>
+                    </div>
+                    <h4>Write Comments</h4>
+                    <p>
+                        <style type="text/css">
+                        .fa-star:before {
+                        color: orange;
+                        }
+                        .fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before
+                        {
+                        color: orange;
+                        }
+                        </style>
+                        <textarea class="form-control" name="feedback_comment" id="feedback_comment"></textarea>
+                    </p>
+                    <input type="hidden" name="ratingfor" id="ratingfor" value="">
+                    <input type="hidden" name="effectedid" id="effectedid" value="">
+                    <input type="hidden" name="artid_rating" id="artid_rating" value="">
+                    <button type="button" class="btn btn-primary login-button" onclick="return submit_rating()">Submit</button>
+                </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--psdcast audio file download-->
+<div class="modal fade" id="psdcast_audio_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Download Audio</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <b>Do you want to download <span id="art_name"></span>?</b>
+        <br />
+        
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="download_audio_file_url" id="download_audio_file_url" value="">
+        <a href="javascript:void(0);" onclick="download_audio_file()" class="btn btn-success">Download</a>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  </div></div>
+      <div class="col-md-2 col-sm-3 text-center advertHd">
+      	<div id="skyscraper_div2">
+      								
+			<div valign="top" class="column3">
+			<p>&nbsp;</p>
+			<!-- /60559764/Middle-Left-Skyscrapper_160_600 -->
+<div id='div-gpt-ad-1493964541272-0' style='height:600px; width:160px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493964541272-0'); });
+</script>
+</div><br/>			</div>
+			      	</div>      	 
+        <!-- <img class="img-responsive" src="/images/4.jpeg"> -->
+      </div>
+      
+    </div>
+  </div>
+ </section>
+<section class="footer">
+ 	<div class="container">
+ 		
+ 		<div class="row">
+ 			                            
+			        <p>&nbsp;</p>
+			                                    
+			        <p>&nbsp;</p>
+			        <center><!-- /60559764/Bottom-Rectangle_300x250 -->
+<div id='div-gpt-ad-1525162576522-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525162576522-0'); });
+</script>
+</div>
+</center> 		</div>
+ 		<hr>
+ 		<div class="row">
+ 			<div class="col-sm-4">
+ 				<div class="footer-logo">
+ 					<a href="https://www.powersystemsdesign.com/"><img src="../psd_logo_new.jpg" class="psd-logo-new"></a>
+ 				</div>
+ 			</div>
+ 			<div class="col-sm-8">
+ 				<div class="foot-link text-right" style="display: block;word-wrap: break-word;">
+ 					&nbsp;<a href='../home/78.html'>Home</a>&nbsp;|&nbsp;<a href='../site-map/75.html'>Site Map</a>&nbsp;|&nbsp;<a href='../contact/74.html'>Contact</a>&nbsp;|&nbsp;<a href='../power-systems-corporation-privacy-policy/106.html'>Privacy Policy</a>&nbsp;|&nbsp;<a href='../refund-policy/129.html'>Refund Policy</a>&nbsp;|&nbsp;<a href='../power-systems-corporation-terms-of-service/107.html'>Terms of Service</a>&nbsp;|&nbsp;<a href='../power-systems-corporation-copyright/105.html'>Copyright &copy; 2025 Power Systems Design, All rights reserved</a>&nbsp; 					<!-- <a href="#">Home</a> | 
+ 					<a href="#">Site Map</a> | 
+ 					<a href="#">Contact</a> | 
+ 					<a href="#">Privacy Policy</a> | 
+ 					<a href="#">Refund Policy</a> | 
+ 					<a href="#">Terms of Service</a> | 
+ 					<a href="#">Copyright © 2019 Power Systems Corporation, All rights reserved  </a> -->
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<hr>
+ 	</div>
+ </section> 
+
+    <!-- Bootstrap core JavaScript -->
+   <!--  <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    
+<!--<div class="nwwrapper" id="nwwrapper">
+    <div class="mwclose"><a href="javascript: void(0)" onclick="closepopup()">X</a></div>
+    <div>
+        <h2>Join Our Newsletter</h2>
+        <b>Sign up today for free and be the first to get notified.</b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <form name="joinNewsletter" id="joinNewsletter" method="POST">
+            <input class="nwtest" type="text" placeholder="enter your email" name="JNEmail" id="JNEmail"/>
+            <br /><br />
+            <select class="nwtest" name="JNRegion" id="JNRegion">
+                <option value="">Select your Region</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="China">China</option>
+                <option value="Rest of Asia">Rest of Asia</option>
+                <option value="South America">South America</option>
+                <option value="Other">Other</option>
+            </select>
+            <br /><br />
+            <input class="nwbtn" type="button" value="Subscribe Now" onclick="JNLFrom()" />
+        </form>
+    </div>
+</div>
+<div class="backgradient" id="backgradient" ></div>-->
+<div class="modal fade" id="newslettermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Join Our PSD's Daily Powersurge</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <!--<b>Sign up today for free and be the first to get notified.</b>-->
+        <b>Sign up Today for "Everything Power Electronics" <i>The Latest News and Exclusive Content from The Editors of PSD.</i> </b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <form name="joinNewsletter" id="joinNewsletter" method="POST">
+            <input class="nwtest form-control" type="text" placeholder="enter your email" name="JNEmail" id="JNEmail"/>
+            <br />
+            <select class="nwtest  form-control" name="JNRegion" id="JNRegion">
+                <option value="">Select your Region</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="China">China</option>
+                <option value="Rest of Asia">Rest of Asia</option>
+                <option value="South America">South America</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input class="nwbtn" type="button" value="Subscribe Now" onclick="JNLFrom()" style="border: none;color: white;padding: 19px 23px 15px;font: 500 15px/15px;text-transform: uppercase;background: #bf1e2d;border-radius: 4px;" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="backgradient" id="backgradient"></div>
+<script>
+    $('#closepopup').click(function(){
+        $('#newslettermodal').modal('hide');
+        document.getElementById("backgradient").style.display = "none";
+    });
+/*function closepopup(){
+     document.getElementById("nwwrapper").style.display = "none";
+     document.getElementById("backgradient").style.display = "none";   
+}*/
+function validateEmail($email) 
+{
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	if( !emailReg.test( $email ) ) 
+	{
+		return false;
+	} 
+	else 
+	{
+		return true;
+	}
+}
+function JNLFrom()
+{
+	var error=0;
+
+	if($("#JNEmail").val()=="")
+	{
+		error++;
+		alert("Email address is required!");
+		$("#JNEmail").focus();
+		return false;
+	}
+	if(!validateEmail($("#JNEmail").val())) 
+	{
+		error++;
+		alert("Email address is invalid!");
+		$("#JNEmail").focus();
+		return false;
+	}
+    if($("#JNRegion").val()=="")
+	{
+		error++;
+		alert("Please select the region");
+		$("#JNRegion").focus();
+		return false;
+	}
+	if(error<=0)
+	{
+		saveJoinNewsLetter();
+	}
+}
+function saveJoinNewsLetter()
+{
+	var filename = "https://www.powersystemsdesign.com/ajax.php?action=saveJoinNewsLetterForm&"+$("#joinNewsletter").serialize();
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr) 
+		{
+			var dataArr = data.split("~");            
+            document.getElementById("joinNewsletter").style.display = "none";
+            document.getElementById("err_msg").innerHTML = dataArr[1];            
+			//$('#joinNewsletter')[0].reset();
+        },
+        error: function (xhr, textStatus, errorThrown) 
+		{
+			alert("Could not save due to some technical error");
+        }
+    });	
+}
+function dis_joinpop(){
+    $('#newslettermodal').modal('show');
+    //document.getElementById("nwwrapper").style.display = "inline-block";
+    document.getElementById("backgradient").style.display = "block";
+}
+</script>	  </body>
+</html>
+		<tr>
+			<td align="center" class="top-ad">
+					<div class="hidden-sm" style="position:fixed;bottom:0px;width:100%;z-index:11;left:0.3%;">
+						<center>
+							<!-- /60559764/Bottom-Leaderboard_728x90 -->
+<div id='div-gpt-ad-1478261167170-0' style='height:90px; width:728px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1478261167170-0'); });
+</script>
+</div>
+						</center>
+					</div>
+			</td>
+		</tr>
+	<div class="modal fade" id="digital_magazine_display_url" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup_magz"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      
+      <div class="modal-body">
+        <b>Please select the below option to view the Digital Issue</b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <select class="nwtest form-control" id="magazines_url_view">
+        	<option>Please Select</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/655">North America</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/654">Europe</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/656">China</option>
+                    </select>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert" style="padding: 6px;font-size: 12px;">
+    <b>This site uses cookies to enhance your visitor experience. By continuing your visit to this site, you accept the use of cookies to offer services and offers tailored to your interests. <a href="../power-systems-corporation-privacy-policy/106.html" target="_blank">(See Our Privacy Policy)</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+        I agree
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script type="text/javascript">
+	function display_magz_url(){
+		$("#digital_magazine_display_url").modal('show');
+	}
+	$('#magazines_url_view').on('change', function () {
+		//alert("coming");
+		var url = $(this).val(); // get selected value
+		if (url) { // require a URL
+			window.open(url, '_blank');
+		}
+		return false;
+    });
+    $('#closepopup_magz').click(function(){
+		$('#digital_magazine_display_url').modal('hide');
+		document.getElementById("backgradient").style.display = "none";
+	});
+
+$('#skyscraper_div1').affix({
+offset: {
+top: 550,
+bottom: function () {
+return (this.bottom = $('.footer').outerHeight(true))
+}
+}
+})
+$('#skyscraper_div2').affix({
+offset: {
+top: 550,
+bottom: function () {
+return (this.bottom = $('.footer').outerHeight(true))
+}
+}
+})
+</script>
+<script>
+  // window.dataLayer = window.dataLayer || [];
+  // window.googletag = window.googletag || { cmd: [] };
+
+  // window.addEventListener('load', function () {
+
+  //   googletag.cmd.push(function () {
+  //   	//console.log("GPT command stack is working");
+  //     googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+  //       var slotId = event.slot.getSlotElementId();
+  //       console.log("coming1");
+  //       var adInfo = {
+  //         'div-gpt-ad-1450361267255-0': { ad_type: 'Welcome Ad', advertiser: 'Infineon' },
+  //         'div-gpt-ad-1711602811938-0': { ad_type: 'Welcome Ad', advertiser: 'Herting' }
+  //       };
+  //       console.log(slotId);
+  //       if (adInfo[slotId]) {
+  //         dataLayer.push({
+  //           event: 'dfp_ad_rendered',
+  //           adUnitPath: event.slot.getAdUnitPath(),
+  //           adSlotId: slotId,
+  //           isEmpty: event.isEmpty,
+  //           size: event.size,
+  //           ad_type: adInfo[slotId].ad_type,
+  //           advertiser: adInfo[slotId].advertiser
+  //         });
+  //       }
+  //     });
+  //   });
+  // });
+</script>
+
+
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <style>
+        /* style to override the default css */
+        .bot_sec ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #b61f2b;
+        }
+        .toggle-widget-btn{
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+            height: 87px;
+            width: 87px;
+        }
+
+        .toggle-widget-btn.active-btn{
+            /* background-color: #408bf4; */
+            background-color: #b61f2b;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px, rgba(0, 0, 0, 0.2) 0px 2px 12px;
+        }
+
+        .toggle-widget-btn:hover{
+            box-shadow: none !important;
+        }
+        
+        .toggle-widget-btn img.rounded-circle{
+            object-fit: contain !important;
+            border-radius: 0 !important;
+        }
+
+        .WidgetHeaderAvatarWrapper{
+            background: #B61E2B;
+        }
+
+        .chat-bot .HeaderTextWrapper{
+            color: #fff !important;
+        }
+       
+        .chat-bot .HeaderTextWrapper .WidgetHeaderAvatarWrapper__HeaderName{
+            color: #fff !important;
+        }
+        
+        .chat-bot #chat-widget-header-description{
+            color: #E3BF4B !important;
+            font-size: 0.875rem;
+            margin: 2px;
+        }
+
+        .chat-bot .chat-wrapper-full{
+            overflow: hidden;
+        }
+
+        .chat-bot .logoMarqueeSection{
+            margin-bottom: 6px;
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 100%;
+            height: 60px; 
+            min-height: 60px;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            color: #fff;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .chat-bot .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            transform: translate3d(0%, 0, 0);
+            animation-name: marquee;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            /* animation: marquee 10s linear infinite running; */
+        }
+
+
+        .chat-bot .logoMarqueeSection:hover .marquee-content  {
+            animation-play-state: paused !important;
+        }
+
+        .chat-bot .marquee-content .marqueelogo {
+            width: 120px;
+            height: 50px;
+            margin: 0 0.5em;
+            padding: 0.5em;
+            background: rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .chat-bot .marquee-content .marqueelogo img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate3d(0%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+
+        .chat-bot .chat-head-avatar{
+            padding: 5px;
+            background:#E3BF4B;
+        }        
+        
+        .chat-bot{
+            background-color: #fff;
+        }
+
+        .chat-bot .message  p.metadata-top {
+            color: rgba(0,0,0,0.6);
+        }
+
+        .chat-bot .metadata .bot-time{
+            color: rgba(0,0,0,0.6);            
+        }
+
+        .chat-bot .metadata .sender-tag {
+            font-weight: 700;
+        }
+
+        .chat-bot .message .chat-txt {
+            padding: 5px 8px;
+            background-color: #E3BF4B;
+            position: relative;
+        }
+
+        .chat-bot .message .chat-txt::before{
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -6px;
+            right: auto;
+            top: 0px;
+            bottom: auto;
+            border: 6px solid;
+            border-color: #e3bf4b transparent transparent transparent;
+        }
+
+        .chat-bot .message.outgoing .chat-txt::before{
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: initial;
+            right: -6px;
+            top: 0px;
+            bottom: auto;
+            border: 6px solid;
+            border-color: #b61f2b transparent transparent transparent;
+        }
+
+        .chat-bot .message.outgoing .chat-txt {
+            background-color: #B61E2B;
+        }
+
+        .chat-bot .chat-wrapper-full{
+            position: relative;
+        }       
+
+        .chat-bot .chat-wrapper-full::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('../assets/imgs/placholder-bot.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100px;
+            width: 100%;
+            height: 100%;
+            max-height: 100px;
+        }
+
+        .chat-bot #notSatisfiedBtn {
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            background: #fff;
+        }
+
+        .chat-bot .input-container {
+            background-color: #b61f2b;
+            border-radius: 0 !important;
+            margin-top: 5px;
+        }
+
+        .chat-bot .input-container form {
+            border-radius: 0 !important;
+        }
+
+        .bot_sec  #user_chat_contact_submit {
+            background-color: #b61f2b !important;
+        }
+
+        .chat-bot .message .chat-txt input, .chat-bot .message .chat-txt textarea{
+            background-color: #fff !important;
+            color: #000 !important;
+            border-radius: 0 !important;
+        }
+        .chat-bot .input-container form input[type=text]{
+            font-size: 2rem!important;
+        }
+        span.tooltip-trigger {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-container:hover .custom-tooltip {
+    visibility: visible;
+}
+.custom-tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: -0.4rem;
+    left: -12.5rem;
+    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.25);
+}
+.tooltip-content {
+    margin-bottom: 8px;
+}
+.tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-container:hover .custom-tooltip {
+    visibility: visible;
+}
+        @media only screen and (max-width: 450px) {
+            .chat-bot.open{
+                width: 100% !important;
+                height: 100% !important;
+                inset: 0 !important;
+                max-width: 100% !important;
+                max-height: 100% !important;
+                position: fixed;
+                margin: 0;
+            }
+
+            .chat-bot  .close-widget{
+                display: block !important;
+                background: #e3bf4b;
+                color: #000 !important;
+                border-radius: 100px !important;
+                opacity: 1;
+                font-weight: 700;
+                border: 0;
+                font-size: 1rem !important;
+                line-height: 1.125rem;
+                box-sizing: content-box;
+                width: 20px;
+                height: 20px;
+            }
+
+            .s450-rounded-top {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            .chat-bot .container-chat{
+                height: calc(100% - 68px);
+            /*max-height: 84vh;*/
+            }
+
+
+        .chat-bot .chat-wrapper-full::before {
+            max-width: 60px;
+            width: 100%;
+            height: 100%;
+            max-height: 60px;
+        }
+
+        .chat-bot .container-chat .chat {
+            max-height: 80vh;
+            }
+            
+        }
+        .panel {
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
+  border-radius: 5px;
+  font-size: 90%;
+  text-align: center;
+  padding: 30px 20px;
+  max-width: 400px;
+}
+
+.panel form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel fieldset, label { 
+  margin: 0; 
+  padding: 0; 
+}
+
+.panel h1 { 
+    font-size: 22px;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+.panel fieldset {
+  margin: 20px 0 20px;
+}
+
+
+.panel .rating { 
+  border: none;
+  float: left;
+}
+
+.panel .rating > input { display: none; } 
+.panel .rating > label:before { 
+  margin: 5px;
+  font-size: 30px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.panel .rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.panel .rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+
+.panel .rating > input:checked ~ label, /* show gold star when clicked */
+.panel .rating:not(:checked) > label:hover, /* hover current star */
+.panel .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.panel .rating > input:checked + label:hover, /* hover current star when changing rating */
+.panel .rating > input:checked ~ label:hover,
+.panel .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.panel .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.panel input, label {
+  cursor: pointer;
+}
+
+.panel input[type="submit"] {
+  margin-top: 5px;
+  background-color: #302d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+
+.panel input[type="submit"]:focus {
+  outline: 0;
+}
+
+.panel input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.panel input[type="submit"]:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.panel .fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.panel .fa-heart:before {
+  content: "\f004";
+  font-family: FontAwesome;
+}
+    </style>
+
+    <!-- Google tag new G4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEQDKYX7YT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HEQDKYX7YT');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52Q28F9');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+    // Get the current time in the format of HH:mm AM/PM
+        function getTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var amPm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        return hours + ':' + minutes + ' ' + amPm;
+        }
+        function getPrevTime(timestamp) {
+        var now = new Date(timestamp*1000);
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var amPm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        return hours + ':' + minutes + ' ' + amPm;
+        }
+    </script>
+</head>
+
+<body style="background: none;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52Q28F9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <input type="hidden" name="" id="">
+    <div class="container" id="chatContainer"></div>
+    <div class="bot_sec" style="position: fixed;bottom: 21px;right: 36px;min-width: 401px; z-index: 2147483647;">
+        <div class="chat-bot-preview position-relative">
+            <div class="chat-right">                
+                <div class="chat-bot" id="chat_widget" style="display: none;">
+                    <nav class="WidgetHeaderStyleWrapper primaryClr widget-background-panel s450-rounded-top" >
+                        <div class="WidgetHeaderStyleWrapper">
+                            <div class="WidgetHeaderAvatarWrapper text-start d-flex justify-content-between align-items-center p-3">
+                                <div class="chat-heading-avatar">
+                                    <div class="CustomChatHeading">
+                                        <div class="chat-head-avatar primary-clr rounded-circle">
+                                            <img src="../assets/imgs/psd_lighten_logo.svg" alt="Avatar" id="imagePreview" class="avtar_bz image_preview rounded-circle" style="object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="HeaderTextWrapper text-light px-3">
+                                    <h5 class="WidgetHeaderAvatarWrapper__HeaderName mb-0 fs-5 fw-bold">
+                                        <div class="WidgetHeaderAvatarWrapper">
+                                            <span class="widget-header-name py-0" id="chat-widget-header-text">PowerPal</span>
+                                        </div>
+                                    </h5>
+                                    <div data-test-type="timestamp" id="chat-widget-header-description" class="AvailabilityMessage small text-green indicator-div" style="display: none;" >Support Typing...</div>
+                                </div>
+                                
+                                <button onclick="window.location= 'https:\/\/www.powersystemsdesign.com/PowerPal.php?page_id=29'; " class="tooltip-container shadow-none btn text-light p-0 fs-2 btn-transparent" style="display: block !important;background: #e3bf4b;color: #000 !important;border-radius: 100px !important;opacity: 1;font-weight: 700;border: 0;font-size: 1rem !important;line-height: 1.125rem;box-sizing: content-box;width: 20px;height: 20px;"><i class="fa fa-expand"></i>
+                                <div class="">
+                                <span class="tooltip-trigger"></span>
+                                <div class="custom-tooltip">
+                                    <div class="tooltip-content">
+                                    <p>Click to expand and explore your search history</p>
+                                    </div>
+                                    <div class="tooltip-arrow"></div>
+                                </div>
+                                </div>
+                                </button>
+                                <button class="close-widget d-none shadow-none btn text-light p-0 fs-2 btn-transparent">×</button>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container-chat">
+                        <div class="chat-wrapper-full">
+                            <div style="font-size: 1rem; margin: 0px 0px 0px 15px;" >Sponsored by:</div>
+                            <div class="logoMarqueeSection">
+                                <!-- both marquee-content div will be here -->
+                                <div   >
+                                                                            <a target="_blank" onclick="redirectToSponsor('OQ==','https://www.powersystemsdesign.com/');" style="cursor: pointer;"><img src="../sponsers/1686550848-psd_loho.jpeg" class="marqueelogo" style="width: auto; max-width: none;">
+                                            
+                                        </a>
+                                                                        </div>
+                                                                        
+                            </div>
+                            <div class="chat">
+                                <div class="message">
+                                    <div class="metadata">
+                                        <p class="metadata-top mb-0">
+                                            <span class="sender-tag">PowerPal</span>
+                                            <span class="bot-time" id="chat_time"></span>
+                                        </p>
+                                    </div>
+                                    <div class="chat-txt primaryClr" id="welcomeMessageDisplay">
+                                        Hello, I am your personal PowerPal. How may I assist you today?
+                                    </div>
+                                </div>
+                                                            </div>
+                            <div id="notSatisfiedBtn" style="bottom: 60px;" class="w-100" onclick="window.open('https:\/\/openai.com/','_blank');">Powered by OpenAI</div>      
+                            <div class="input-container primaryClr">
+                                <form id="messageForm">
+                                    <input type="text" placeholder="Type a message..." id="message-input" autocomplete="off">
+                                    <input type="hidden" name="C76149" id="C76149" value="0">
+                                    <input type="hidden" name="U62843" id="U62843" value="0">
+                                    <button type="submit" id="send-message"><span class="send-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <g clip-path="url(#clip0_1_31)">
+                                                <path d="M14.9662 0.643126C15.0003 0.557941 15.0087 0.464622 14.9902 0.374738C14.9718 0.284854 14.9274 0.202358 14.8625 0.137477C14.7976 0.0725959 14.7151 0.0281832 14.6252 0.009745C14.5353 -0.00869323 14.442 -0.000346201 14.3568 0.0337513L0.719033 5.48906H0.718095L0.294345 5.65781C0.214086 5.68983 0.144238 5.7434 0.0925164 5.81262C0.0407947 5.88184 0.00921235 5.96401 0.0012581 6.05005C-0.00669616 6.1361 0.00928721 6.22266 0.0474427 6.30019C0.0855981 6.37772 0.144441 6.44319 0.21747 6.48938L0.601846 6.73313L0.602783 6.735L5.2856 9.71438L8.26497 14.3972L8.26684 14.3991L8.5106 14.7834C8.55693 14.8562 8.62244 14.9147 8.69991 14.9527C8.77738 14.9906 8.86381 15.0064 8.94968 14.9983C9.03556 14.9903 9.11755 14.9587 9.18663 14.9071C9.25571 14.8554 9.3092 14.7857 9.34122 14.7056L14.9662 0.643126ZM13.2478 2.415L6.22216 9.44063L6.0206 9.12375C5.98366 9.0656 5.93437 9.01631 5.87622 8.97938L5.55935 8.77781L12.585 1.75219L13.6893 1.31063L13.2487 2.415H13.2478Z" fill="#B61E2B"/>
+                                            </g>
+                                            <defs><clipPath id="clip0_1_31"><rect width="15" height="15" fill="white"/></clipPath></defs>
+                                        </svg>
+                                    </span></button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggle-widget" class="toggle-widget-btn secClr primary-clr float-end" onclick="addClassBtn()">
+                    <span class="text-light fw-bold">
+                        <img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_img rounded-circle image_preview" style="object-fit: cover;">
+                    </span> 
+                </button>
+                                  
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <script src="https://www.powersystemsdesign.com/psdbot/assets/scripts/jquery.js"></script> -->
+
+    
+    <script>
+    function addClassBtn(){
+        setTimeout(function(){
+            // console.log(document.getElementById('chat_widget').classList.contains("open"));
+            if(document.getElementById('chat_widget').classList.contains("open")){
+            $("#toggle-widget").addClass("active-btn");
+        } else{
+            $("#toggle-widget").removeClass("active-btn");                
+        }
+        }, 100);
+    }
+
+
+      kw = '';
+      var incoming_message_count=0;
+      $("#user_chat_contact-err").text("");
+      var feedBackDiv = '<div id = "feedbackDiv" class="panel"><div class="ratings-container"><p>How satisfied are you with our chatbot\'s performance?</p><form action="29.html" id="ratingForm"><fieldset class="rating"><input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label><input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label><input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label><input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label><input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label></fieldset><textarea name="feedback_comment" id="feedback_comment" placeholder="Comment..." rows="3" cols="30" ></textarea><input disabled type="submit" name="getVal" value="Send Review"></form></div></div>';
+      var feedBackbtn = '<button id = "showFeedbackBtn" onclick="showFeedback();" class="tooltip-container d-none shadow-none btn text-light p-0 fs-2 btn-transparent" style="display: block !important;background: transparent;color: #000 !important;border-radius: 100px !important;opacity: 1;/* font-weight: 700; */text-decoration: underline;border: 0;font-size: 1.3rem !important;line-height: 1.125rem;box-sizing: content-box;/* width: 20px; */height: 20px;outline: none;align-self: flex-end;margin-bottom: 12px;margin-top: 12px;"">Submit Feedback</button>';
+      var helpful = true;
+      var feedbackRecieved = false;
+
+
+        
+      $(document).ready(function() {
+          
+        $('.chat').append(feedBackbtn);
+        // Listen for form submit event
+        $('#messageForm').submit(function(e) {
+          // Prevent the form from submitting normally
+        //   e.preventDefault();
+        // Get the input value
+        var message = $('#message-input').val();
+        kw = message;
+        var tempMessage = (message.replace(/[^\w\s]/gi, '')).trim();
+        // console.log(message);
+        // Add the outgoing message to the chat container
+        if(message !='')
+        {
+          
+          incoming_message_count++;
+          $('.chat').append(`
+          <div class="message outgoing">
+            <div class="metadata">
+                <p class="metadata-top mb-0">
+                    <span class="sender-tag">You</span>
+                    <span class="bot-time" id="chat_time">${getTime()}</span>
+                </p>
+            </div>
+            <p class="chat-txt secClr">${message}</p>
+        </div>
+        `);
+        $('.chat').scrollTop($('.chat')[0].scrollHeight);
+        var appendMessage='';
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            message: message,
+            U62843:$("#U62843").val(),
+            C76149:$("#C76149").val(),
+            action:'ask_hercules',
+          },
+          beforeSend:function(){
+            
+          $(".indicator-div").show();
+          $('.chat').scrollTop($('.chat')[0].scrollHeight);
+          
+              $("#feedbackDiv").remove();
+              $("#showFeedbackBtn").remove();
+          
+          },
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            $(".indicator-div").hide();
+            
+            var id = new Date().getTime();
+            // Add the incoming message to the chat container ${result["Msg"]+appendMessage}
+            $('.chat').append(`
+                            <div class="message">
+                            <div class="metadata">
+                            <p class="metadata-top mb-0">
+                            <span class="sender-tag">PowerPal</span>
+                            <span class="bot-time" id="chat_time">${getTime()}</span>
+                                    </p>
+                                </div>
+                                <div class="chat-txt primaryClr" >
+                                <div class="flex justify-between lg:block" style="
+                                position: absolute;
+                                right: -19%;
+                                "><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"><div class="flex gap-1"><button onclick="vote(this,${result["Message_ID"]},1);" class="like" style="
+                                background: transparent;
+                                border: none;
+                                "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg></button><button onclick="vote(this,${result["Message_ID"]},-1);" class="" style="
+                                background: transparent;
+                                border: none;
+                                "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg></button></div></div></div>
+                                ${result["Msg"]}</div>
+                                </div>
+                            `);
+                $('.chat').append(feedBackbtn);
+                $('.chat').scrollTop($('.chat')[0].scrollHeight - $(".message").last().height() - $(".outgoing").last().height() - 80);
+                try{
+                    if(result.hasOwnProperty('cookie'))
+                    {
+                      result.cookie.forEach(element => {
+                        setCookie(element.key,element.value,30);
+                        $(document.getElementById(element.key)).val(element.value); 
+                      });
+                    }
+                  }
+                  catch(err){
+                    console.log(err);
+                  } 
+            if(!feedbackRecieved)
+            {
+                $("#showFeedbackBtn").removeClass("d-none");
+            }
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+
+        // Clear the input field after sending the message
+        $('#message-input').val('');
+        
+    }
+    return false
+      });
+});
+        
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Toggle the widget on button click
+            $('#toggle-widget').click(function() {
+                $('#chat_widget').toggleClass('open');
+                
+                // Change the button content to a cross when the chat_widget is open
+                if ($('#chat_widget').hasClass('open')) {
+                    $('#notSatisfiedBtn').css('display','block');
+                    $('#chat_widget').css('display','block');
+                    $('#toggle-widget').html(`<span class="text-light fw-bold">&times;</span>`);  
+                    try{
+                        $('.chat').scrollTop($('.chat')[0].scrollHeight - $(".message").last().height() - $(".outgoing").last().height() - 80);
+                    }
+                    catch(err){
+                        // console.log(err);
+                    }
+                } else {             
+                    $('#chat_widget').css('display','none');
+                    $('#notSatisfiedBtn').css('display','none');
+                    $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></i></span>`);
+                }
+                });
+                
+                // Close the widget when the close button is clicked
+                $('#chat_widget .close-widget').click(function() {
+                $('#chat_widget').removeClass('open');
+                $('#toggle-widget').removeClass('active-btn');
+                $('#chat_widget').css('display','none');
+                $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></span>`);
+                $('#notSatisfiedBtn').css('display','none');
+                });
+                 
+            });
+            
+            // Close the widget when the Esc key is pressed
+            $(document).keydown(function(event) {
+                if (event.keyCode == 27) {
+                $('#toggle-widget').removeClass('active-btn');
+                $('#chat_widget').removeClass('open');
+                $('#chat_widget').css('display','none');
+                $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></i></span>`);
+                $('#notSatisfiedBtn').css('display','none');
+                
+            }
+        });
+    </script>
+    
+    <script>
+        window.addEventListener('resize', positionChatbot);
+
+        function positionChatbot() {
+        var container = document.getElementById('chatContainer');
+        var chatbotContainer = document.querySelector('.bot_sec');
+
+        var containerWidth = container.offsetWidth;
+        var chatbotWidth = chatbotContainer.offsetWidth;
+        var rightPosition = containerWidth - chatbotWidth - 20; // Adjust the padding if needed
+
+        chatbotContainer.style.right = (window.innerWidth - containerWidth + 15)/2 + 'px';
+        }
+
+        // Call the positionChatbot function initially
+        positionChatbot();
+        function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = ";SameSite=None;Secure;expires=" + date.toUTCString();
+            
+        }
+        document.cookie = name + "=" + (`'${value}'` || "")  + expires + "; path=/";
+        
+    }
+    $(document).ready(function() {
+   $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
+    function redirectToSponsor(sponsor,link){
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            sponsor: sponsor,
+            action:'sponsor_clicked'
+          },
+          
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            window.open(link,"_blank");
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+    }
+
+    // Feedback functions
+    function submitRating(){
+        const valueStars = document.querySelector('input[name="rating"]:checked').value;
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            stars: valueStars,
+            comment:$("#feedback_comment").val(),
+            U62843:$("#U62843").val(),
+            C76149:$("#C76149").val(),
+            action:'submitFeedback',
+          },
+          
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            showThankyou(valueStars);
+            
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+          
+      }
+      function showThankyou(val) {
+          const starText = val > 1 ? 'stars' : 'star';
+          const panel = document.querySelector('.panel');
+          panel.innerHTML = `
+              <span class="fa-heart"></span>
+              <h1>Thank you!</h1>
+              <br>
+              <strong>Feedback: ${val} ${starText}</strong>
+              <p>We'll use your feedback to improve our support.</p>
+          `;
+      }
+      function handleChange() {
+        const inputRatings = document.querySelectorAll('input[name="rating"]');
+        const submitBtn = document.querySelector('input[name="getVal"]');
+        
+        inputRatings.forEach(input => {
+            // console.log(input);
+            input.addEventListener('change', () => {
+                // console.log("clicked stars");
+                // submitBtn.disabled = false;
+                if (input.checked === true) {
+                    submitBtn.disabled = false;
+                    $(submitBtn).removeAttr("disabled");
+                }
+            })
+        })
+        }
+        function vote(elem,message_id,value){
+          $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            value: value,
+            message_id:message_id,
+            action:'voteConversation',
+          },
+          beforeSend:function(){
+            var parent = elem.parentNode;
+            var children = parent.children;
+            for(var i=0;i< children.length;i++)
+            {
+              var nestedChildren = children[i].children; // Assuming you want to target the first level of children
+              for(var j=0;j< nestedChildren.length;j++)
+                nestedChildren[j].setAttribute("fill", "none");
+            }
+          },
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            if(value === 0)
+            {
+                if($(elem).hasClass("like"))
+                {
+                    $(elem).attr("onclick","vote(this,"+message_id+",1)");
+                }
+                else
+                {
+                    $(elem).attr("onclick","vote(this,"+message_id+",-1)");
+                }
+            }
+            else
+            {
+                $(elem).attr("onclick","vote(this,"+message_id+",0)");
+                if(value === 1)
+                {
+                  $(elem).children("svg").attr("fill","#E3BF4B");
+                }
+                else
+                {
+                  $(elem).children("svg").attr("fill","#B61E2B");
+                  $(elem).children("svg").attr("fill","#B61E2B");
+                }
+            }
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+        }
+        function showFeedback(){
+            if($("#feedbackDiv").length != 0)
+            {
+                $("#feedbackDiv").toggleClass("d-none");
+                $('.chat').scrollTop($('.chat')[0].scrollHeight);
+                return;
+            }
+            $('.chat').append(feedBackDiv);
+                $('#ratingForm').submit(function(e) {
+                    submitRating();
+                    return false;
+                });
+                $('.chat').scrollTop($('.chat')[0].scrollHeight);
+                handleChange();
+        }
+    </script>
+</body>
+
+</html><script type="text/javascript">
+function check_character_length(field_id,max_allowed,print_result_span_id)
+{
+    var words_length = document.getElementById(field_id).value;
+    var remaining_characters=max_allowed-words_length.length;
+    if(words_length.length==max_allowed)
+    {
+        toastr.error("You cannot enter more than "+max_allowed+" characters");
+        $("#"+print_result_span_id).html(remaining_characters+" characters remaining");
+        $("#"+field_id).focus();
+    }
+    else 
+    {
+        $("#"+print_result_span_id).html(remaining_characters+" characters remaining");
+    }
+}
+function write_review(aid){
+    $("#addratings").modal('show');
+    $("#artid_rating").val(aid);
+}
+function submit_rating(){
+    var feedback=$("#feedback_comment").val();
+    //console.log(feedback);
+    var rating=$("#reviews-rating").val();
+    var artid_rating=$("#artid_rating").val();
+    //console.log(rating);
+    if($("#reviews-rating").val().trim()==""){
+
+        alert("Please give your ratings");
+        $("#reviews-rating").focus();
+        return false;
+    }else{
+        $.ajax({
+                type:"POST",
+                url:"https://www.powersystemsdesign.com/ajax.php",
+                data:{
+                action:"updaterating",
+                ratingno:$("#reviews-rating").val(),
+                feedback:$('#feedback_comment').val(),
+                artid_rating:$('#artid_rating').val()
+            },
+            success:function(msg)
+            {
+                alert("Thank you for your feedback");
+                setTimeout(function(){ location.reload(); }, 100);
+            }
+        });
+    }
+} 
+// $(document).ready(function(){
+//     var currnt_image_list= '';
+//     var substr = currnt_image_list.split(','); 
+//     for(var i = 0;i < substr.length;i++){
+//         (function(){
+//             var ii = i;
+//             setTimeout(function(){
+//                 var get_htmlresource=$("#htmlmp-"+substr[ii]).val();
+//                 var get_article_name=$("#article_name-"+substr[ii]).val();
+
+//                 var aid=$("#artid_disp-"+substr[ii]).val();
+//                 $.ajax({
+//                     type:"POST",
+//                     url:"https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//                     data:{
+//                         action:"getdata",
+//                         get_htmlresource:get_htmlresource,
+//                         get_article_name:get_article_name,
+//                         aid:aid
+
+//                     },
+//                     success:function(html)
+//                     {
+//                         $("#audio_player_tag-"+substr[ii]).html(html);
+//                     }
+//                 });
+//                 //console.log(ii);
+//             },10);
+//         })();
+//     }
+// });
+
+// $(document).ready(function () {
+//     var currnt_image_list = '';
+//     var substr = currnt_image_list.split(',').filter(Boolean); // Ensure no empty values
+//     var batchSize = 25; // Load 25 at a time
+//     var loadedCount = 0; // Track how many are loaded
+
+//     // Add loader to indicate loading process
+//     // $("body").append('<div id="loading-indicator" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">Generating audio files, please wait....</div>');
+
+//     function loadNextBatch() {
+//         if (loadedCount >= substr.length) {
+//             // $("#loading-indicator").fadeOut(); // Hide loader when done
+//             // return;
+//         }
+
+//         var remaining = substr.length - loadedCount;
+//         var loadLimit = Math.min(batchSize, remaining);
+//         var startIndex = loadedCount;
+
+//         console.log(`Loading ${loadLimit} audio files starting from index ${startIndex}...`);
+
+//         var requests = []; // Store AJAX requests
+
+//         for (var i = 0; i < loadLimit; i++) {
+//             (function (index) {
+//                 var ii = startIndex + index;
+//                 if (ii >= substr.length) return;
+
+//                 var htmlmpElement = $("#htmlmp-" + substr[ii]);
+//                 var audioTagElement = $("#audio_player_tag-" + substr[ii]);
+
+//                 if (!htmlmpElement.length || !audioTagElement.length) return;
+
+//                 var get_htmlresource = htmlmpElement.val();
+//                 var get_article_name = $("#article_name-" + substr[ii]).val();
+//                 var aid = $("#artid_disp-" + substr[ii]).val();
+
+//                 // Push each AJAX request to array
+//                 requests.push(
+//                     $.ajax({
+//                         type: "POST",
+//                         url: "https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//                         data: {
+//                             action: "getdata",
+//                             get_htmlresource: get_htmlresource,
+//                             get_article_name: get_article_name,
+//                             aid: aid
+//                         },
+//                         success: function (html) {
+//                             audioTagElement.html(html);
+//                         },
+//                         error: function (jqXHR, textStatus, errorThrown) {
+//                             console.error(`Error loading audio ${substr[ii]}: ${textStatus}, ${errorThrown}`);
+//                         }
+//                     })
+//                 );
+//             })(i);
+//         }
+
+//         // Wait for all requests in this batch to complete before proceeding
+//         $.when.apply($, requests).done(function () {
+//             loadedCount += loadLimit; // Update loaded count
+//             console.log(`Loaded ${loadedCount} items so far...`);
+
+//             // Load next batch after 1 second
+//             setTimeout(loadNextBatch, 500);
+//         });
+//     }
+
+//     // Start loading first batch
+//     loadNextBatch();
+// });
+
+// $(document).ready(function () {
+//     var currnt_image_list = '';
+//     var substr = currnt_image_list.split(',').filter(Boolean); // Ensure no empty values
+//     var loadedCount = 0; // Track processed items
+//     var preloadCount = 2; // Number of initial audios to generate
+
+//     function generateAudio(index, callback) {
+//         if (index >= substr.length) {
+//             if (callback) callback(); // If last item, trigger callback
+//             return;
+//         }
+
+//         let htmlmpElement = $("#htmlmp-" + substr[index]);
+//         let audioTagElement = $("#audio_player_tag-" + substr[index]);
+
+//         if (!htmlmpElement.length || !audioTagElement.length) {
+//             if (callback) callback();
+//             return;
+//         }
+
+//         let get_htmlresource = htmlmpElement.val();
+//         let get_article_name = $("#article_name-" + substr[index]).val();
+//         let aid = $("#artid_disp-" + substr[index]).val();
+
+//         $.ajax({
+//             type: "POST",
+//             url: "https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//             data: {
+//                 action: "getdata",
+//                 get_htmlresource: get_htmlresource,
+//                 get_article_name: get_article_name,
+//                 aid: aid
+//             },
+//             success: function (html) {
+//                 audioTagElement.html(html);
+//                 if (callback) callback();
+//             },
+//             error: function () {
+//                 if (callback) callback();
+//             }
+//         });
+//     }
+
+//     // Preload first 5 audios
+//     function preloadFirstBatch() {
+//         let completed = 0;
+//         for (let i = 0; i < Math.min(preloadCount, substr.length); i++) {
+//             generateAudio(i, function () {
+//                 completed++;
+//                 if (completed === preloadCount) {
+//                     // After preloading first 5, start sequential loading
+//                     $(window).on("load", function () {
+//                         loadNext(preloadCount);
+//                     });
+//                 }
+//             });
+//         }
+//     }
+
+//     // Sequentially load remaining audios
+//     function loadNext(startIndex) {
+//         if (startIndex >= substr.length) return;
+
+//         generateAudio(startIndex, function () {
+//             setTimeout(() => loadNext(startIndex + 1), 10); // Wait 200ms before the next request
+//         });
+//     }
+
+//     // Start preloading
+//     preloadFirstBatch();
+// });
+
+
+$(document).ready(function () {
+    var currnt_image_list = '';
+    var substr = currnt_image_list.split(',').filter(Boolean);
+    
+    // Add CSS for the loading indicator
+    $("<style>")
+        .prop("type", "text/css")
+        .html(`
+            .audio-loading-indicator {
+                background: #f5f5f5;
+                border-radius: 5px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                width: 100%;
+                max-width: 500px;
+                margin: 20px auto;
+            }
+            .audio-loading-spinner {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 4px solid rgba(74, 144, 226, 0.3);
+                border-radius: 50%;
+                border-top-color: #4a90e2;
+                animation: spin 1s ease-in-out infinite;
+                margin-bottom: 10px;
+            }
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        `)
+        .appendTo("head");
+    
+    // Only initialize visible audio players on page load
+    initVisibleAudioPlayers();
+    
+    // On scroll, check and initialize players that come into view
+    $(window).on('scroll', debounce(checkAndInitPlayers, 200));
+    
+    function initVisibleAudioPlayers() {
+        substr.forEach(function(id, index) {
+            let audioContainer = $("#audio_player_tag-" + id);
+            if (audioContainer.length && isElementInViewport(audioContainer[0])) {
+                initSingleAudioPlayer(id);
+            }
+        });
+    }
+    
+    function checkAndInitPlayers() {
+        substr.forEach(function(id) {
+            let audioContainer = $("#audio_player_tag-" + id);
+            if (audioContainer.length && 
+                isElementInViewport(audioContainer[0]) && 
+                !audioContainer.hasClass('initialized')) {
+                initSingleAudioPlayer(id);
+            }
+        });
+    }
+    
+    function initSingleAudioPlayer(id) {
+        let audioTagElement = $("#audio_player_tag-" + id);
+        if (audioTagElement.hasClass('initialized')) return;
+        
+        let get_htmlresource = $("#htmlmp-" + id).val();
+        let get_article_name = $("#article_name-" + id).val();
+        let aid = $("#artid_disp-" + id).val();
+        
+        // Add a more visible loading indicator with animation
+        audioTagElement.html(`
+            <div class="audio-loading-indicator">
+                <div class="audio-loading-spinner"></div>
+                <div>Loading audio player...</div>
+            </div>
+        `);
+        
+        $.ajax({
+            type: "POST",
+            url: "https://www.powersystemsdesign.com/ajax_audio_psdcast_test.php",
+            data: {
+                action: "getdata",
+                get_htmlresource: get_htmlresource,
+                get_article_name: get_article_name,
+                aid: aid
+            },
+            success: function (html) {
+                audioTagElement.html(html);
+                
+                audioTagElement.addClass('initialized');
+                
+                // Make sure the play button starts in the correct state
+                // Find the player and play button in the newly loaded content
+                const player = audioTagElement.find("audio")[0];
+                const playBtn = audioTagElement.find(".play-button")[0];
+                
+                if (player && playBtn) {
+                    // Start with proper play state (not paused)
+                    $(playBtn).removeClass("pause");
+                    
+                    // Add loading class to play button until audio is ready
+                    $(playBtn).addClass("loading");
+                    
+                    player.addEventListener('waiting', function() {
+                        if (playBtn) playBtn.classList.add('loading');
+                        console.log("event ", "waiting");
+                    });
+
+                    player.addEventListener('playing', function() {
+                        if (playBtn) playBtn.classList.remove('loading');
+                        console.log("event ", "playing");
+                    });
+                    
+                    // Once the audio is ready to play, remove loading state
+                    $(player).on('canplay', function() {
+                        $(playBtn).removeClass("loading");
+                    });
+                    
+                    // Handle errors
+                    $(player).on('error', function() {
+                        $(playBtn).removeClass("loading");
+                        $(playBtn).addClass("error");
+                    });
+                }
+                // updatePlayButtonHandlers();
+            },
+            error: function() {
+                audioTagElement.html(`
+                    <div class="audio-loading-indicator" style="color: #f44336;">
+                        <div>Error loading audio player. Please try again.</div>
+                    </div>
+                `);
+            }
+        });
+    }
+    
+    // Helper functions
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                func.apply(context, args);
+            }, wait);
+        };
+    }
+
+    // $(document).on('click', '.play-button', function() {
+        
+    // });
+
+    function updatePlayButtonHandlers() {
+        // Remove any duplicate click handlers first to avoid conflicts
+        // $(document).off('click', '.play-button');
+        
+        // // Add a new handler that doesn't conflict with the inline one
+        // $(document).on('click', '.play-button', function(e) {
+        //     const playBtn = $(this);
+        //     const audioId = playBtn.closest('[id^="audio_player_tag-"]').attr('id').split('-')[1];
+        //     const player = document.getElementById("player-" + audioId);
+            
+        //     if (!player) return;
+            
+        //     if (player.paused) {
+        //         // Add loading state while attempting to play
+        //         // playBtn.addClass("loading");
+                
+        //         // Use promise to handle play success/failure
+        //         // player.play().then(function() {
+        //         //     playBtn.removeClass("loading");
+        //         //     playBtn.addClass("pause");
+        //         // }).catch(function(error) {
+        //         //     playBtn.removeClass("loading");
+        //         //     console.log("Play error handled:", error.message);
+        //         //     // If the error was due to user interruption, don't show error state
+        //         //     if (error.name !== "AbortError") {
+        //         //         playBtn.addClass("error");
+        //         //     }
+        //         // });
+        //     } else {
+        //         player.pause();
+        //         playBtn.removeClass("pause loading");
+        //     }
+
+        //     if (!playBtn.hasClass('pause') && !playBtn.hasClass('loading')) {
+        //         playBtn.addClass('loading');
+        //     }
+        // });
+    }
+
+    // Call this after initializing players
+    // updatePlayButtonHandlers();
+
+    // run first 5
+    substr.forEach(function(id, index) {
+        if (index < 5) { // Only process the first 5 elements
+            setTimeout(()=>{
+                let audioContainer = $("#audio_player_tag-" + id);
+                if (audioContainer.length ) {
+                    initSingleAudioPlayer(id);
+                }
+            },1000*index)
+        }
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+function callexternallink(link,artid){
+    var val=link;
+    var artid=artid;
+    var filename = "https://www.powersystemsdesign.com/ajax.php?action=linkclicked&artid="+ artid +"&externallink="+val;
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr){
+            if(data=="success"){
+                window.location.href=val;
+            }
+        },
+        error: function (xhr, textStatus, errorThrown){
+        }
+    });
+}
+function view_podcast_icons(artid){
+    $("#podcast_displays-"+artid).show();
+}
+</script>
+<script>
+$('#closepopup_psdcast').click(function(){
+    $('#psdcastmodal').modal('hide');
+    document.getElementById("backgradient").style.display = "none";
+});
+function validateEmail($email) 
+{
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if( !emailReg.test( $email ) ) 
+    {
+        return false;
+    } 
+    else 
+    {
+        return true;
+    }
+}
+function PSDcastForm()
+{
+    var error=0;
+
+    if($("#PSDcastEmail").val()=="")
+    {
+        error++;
+        alert("Email address is required!");
+        $("#PSDcastEmail").focus();
+        return false;
+    }
+    if(!validateEmail($("#PSDcastEmail").val())) 
+    {
+        error++;
+        alert("Email address is invalid!");
+        $("#PSDcastEmail").focus();
+        return false;
+    }
+    if(error<=0)
+    {
+        saveJoinPSDCast();
+    }
+}
+function saveJoinPSDCast()
+{
+    var filename = "https://www.powersystemsdesign.com/ajax.php?action=saveJoinPSDCastForm&"+$("#psdastmodal").serialize();
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr) 
+        {
+            var dataArr = data.split("~"); 
+            if(dataArr[0]=="ERROR!"){
+                document.getElementById("err_msg_psdcast").innerHTML = dataArr[1];
+                setTimeout(function(){ location.reload(); }, 1500);
+            }else{
+                alert("Thank you for Subscribing");
+                setTimeout(function(){ location.reload(); }, 1500);
+                //$("#psdcastmodal").modal('hide');
+            }           
+                   
+            //$('#joinNewsletter')[0].reset();
+        },
+        error: function (xhr, textStatus, errorThrown) 
+        {
+            alert("Could not save due to some technical error");
+        }
+    }); 
+}
+function subscribe_to_psdcast(){
+     $('#psdcastmodal').modal('show');
+}
+function podcast_selected(click_url,artid,title){
+   $.ajax({
+      type:"POST",
+      url:"https://www.powersystemsdesign.com/ajax.php",
+      data:{
+         action:"podcast_view_save",
+         click_url:click_url,
+         artid:artid,
+         title:title
+      },
+      success:function(msg)
+      {
+         //window.open(click_url, '_blank');
+
+         window.location=click_url;
+         //$("#audio_player_tag-"+substr[ii]).html(html);
+      }
+   });
+}
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rating/1.4.0/bootstrap-rating.js"></script>
+<script type="text/javascript">
+    $(document).ready( function () {
+    $('#reviews-rating').rating({
+        filled: "fa fa-2x fa-star",
+        empty: "fa fa-2x fa-star-o",
+        fractions: 2,
+        extendSymbol: function (rate) {
+            $(this).tooltip({
+                container: "body",
+                placement: "bottom",
+                title: "Rate " + rate
+            });
+        }
+    })
+    .on('change', function () {
+        $('#reviews-rating-label').html($(this).val() + " Stars");
+    });
+});
+    function ratinggiven(){
+        $("#addratings").modal('show');
+    }
+
+</script>
+<script type="text/javascript">
+$.fn.stars = function() {
+    return $(this).each(function() {
+    var rating = $(this).data("rating");
+    var numStars = $(this).data("numStars");
+    //var aa=new Array(Math.floor(rating));
+    //console.log(aa);
+    //console.log(Math.floor(rating + 1));
+    var fullStar = new Array(Math.floor(rating)+1).join('<i class="fa fa-star"></i>');
+    //console.log(fullStar);
+    var halfStar = ((rating%1) !== 0) ? '<i class="fa fa-star-half-empty"></i>': '';
+    var noStar = new Array(Math.floor(numStars + 1 - rating)).join('<i class="fa fa-star-o"></i>');
+    $(this).html(fullStar + halfStar + noStar);
+    });
+}
+$('.stars').stars();
+function downloadmp(psdcast_url,article_name) {
+    $("#art_name").text(article_name);
+    $("#download_audio_file_url").val(psdcast_url)
+    $("#psdcast_audio_file").modal('show');
+}
+function download_audio_file(){
+    var audio_fileurl=$("#download_audio_file_url").val();
+    var artname=$("#art_name").text();
+    $("#psdcast_audio_file").modal('hide');
+    //setTimeout(function(){ window.location='https://www.powersystemsdesign.com/download_audio.php?audio_file_download='+audio_fileurl; }, 200);
+    setTimeout(function(){document.location.href = 'https://www.powersystemsdesign.com/download_audio.php?audio_file_download='+audio_fileurl+'&filename='+artname; },250);
+
+}
+</script>

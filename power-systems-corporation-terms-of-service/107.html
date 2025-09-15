@@ -1,0 +1,2861 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Power Systems Design (PSD) Information to Power Your Designs</title>
+<meta name="keywords" content="Power Systems Corporation Terms of Service">
+<meta name="description" content="Power Systems Design (PSD) empowers global innovation for the power electronic design engineering community by providing in-depth editorial content focused on helping the design engineering professionals with their latest product designs. ">
+    <meta name="google-site-verification" content="xrnvfF-isiFB-311SuCoxYYF58CcWEcTfp4ftZRYxlo" />
+    <meta name="msvalidate.01" content="3A1D57DD9EB5602CF3FCE943D5169742" />
+    <meta name="googlebot" content="index,follow" />
+    <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../lightbox.css">
+<link rel="shortcut icon" href="../favicon.ico" />
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script async src="../functions.js"></script>
+<script type="text/javascript" async src="../lightbox.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+<style type="text/css">
+  #skyscraper_div1.affix{
+   position: fixed !important;
+   top: 0;
+  } 
+#skyscraper_div2.affix{
+   position: fixed !important;
+   top: 0;
+  }
+
+ a img.twitter-img {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    padding: 8px;
+}
+.hidden_mobile_ad {
+    display: none !important;
+}
+.show_mobile_ad {
+    display: block;
+}
+.header_google_pic_row{
+  float: left;max-width: 100%;margin: 0 auto;
+  margin-left: 3% !important;
+}
+.psd-logo-new{
+    max-height: 65px;
+  }
+@media (max-width:1200px){
+  .header_google_pic_row{
+    margin-left: 0 !important;
+  }
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+@media (max-width:991px){
+  .header_google_pic_row{
+    text-align: center;
+    float:initial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header_google_pic_row a img {
+    max-width: 250px !important;
+    max-height: 350px;
+  }
+
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+@media (max-width:530px){
+  .large-scr-home-img{
+    display:none !important;
+  }
+  .mobile-home-img{
+    display:block !important;
+  }
+
+  .psd-logo-new{
+    max-height: 54px;
+  }
+}
+#timertext1
+{
+    text-decoration: none;
+    color: #bf1e2d !important;
+    /*color: blue !important;*/
+    font-size:12px;
+}
+#timertext2
+{
+    text-decoration: none;
+    color: #bf1e2d !important;
+    /*color: blue !important;*/
+    font-size:12px;
+}
+</style>
+<!--Google Analytics Starts-->
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-98130312-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>-->
+<!--Google Analytics Ends-->
+
+<!-- Global site tag (gtag.js)-UA - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109372145-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109372145-1');
+</script> -->
+<!--Google Analytics Ends-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HEQDKYX7YT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HEQDKYX7YT');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52Q28F9');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDLQrGImMhND3bjikM51H7Kog08X7n6_Is",
+    authDomain: "powersystemsdesign-f2b5e.firebaseapp.com",
+    projectId: "powersystemsdesign-f2b5e",
+    storageBucket: "powersystemsdesign-f2b5e.appspot.com",
+    messagingSenderId: "371490424969",
+    appId: "1:371490424969:web:7cb3149f3c4f867eeb9e58",
+    measurementId: "G-WKJT76YHZL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+// function closetimer1() {
+//    $(".welcome_desktop").css("display","none");
+// }
+// function closetimer2() {
+//    $(".welcome_desktop").css("display","none");
+// }
+// function closetimer3() {
+//    $(".welcome_mobile").attr("style", "display: none !important");
+// }
+// function closetimer4() {
+//    $(".welcome_mobile").attr("style", "display: none !important");
+// }
+//   function closetimer1()
+// {
+//     $(".welcome_desktop").css("display","none");
+// }
+// function closetimer2(){
+//   //alert("coming");
+//     $(".welcome_mobile").attr("style", "display: none !important");
+// }
+</script>
+<!--Google DFP Starts-->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+    googletag.defineSlot('/60559764/Welcome_640x480', [640, 480], 'div-gpt-ad-1450361267255-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Leaderboard_728x90', [728, 90], 'div-gpt-ad-1478261167170-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Left-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1493733425607-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1478606513268-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Left-Tile_160x160', [160, 160], 'div-gpt-ad-1450361781743-3').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Left-Skyscrapper_160_600', [160, 600], 'div-gpt-ad-1493964541272-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Rectangle_300x250', [300, 250], 'div-gpt-ad-1450361781743-5').addService(googletag.pubads());    
+    googletag.defineSlot('/60559764/Right-Tile_160x160', [160, 160], 'div-gpt-ad-1450361781743-7').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Search-Box-Logo_154x45', [154, 45], 'div-gpt-ad-1450361781743-8').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Leaderboard_728x90', [728, 90], 'div-gpt-ad-1450361781743-9').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Left-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1450361781743-10').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Rectangle_300x250', [300, 250], 'div-gpt-ad-1450361781743-11').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1481637681160-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Middle-Right-Skyscraper_160x600', [160, 600], 'div-gpt-ad-1479134058447-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/wallpaper_skyscrapper_left_96x668', [120, 660], 'div-gpt-ad-1484319980338-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/wallpaper_skyscrapper_right_96x668', [120, 660], 'div-gpt-ad-1484319980338-1').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Wallpaper-Top-Skyscrapper_1050x90', [1058, 90], 'div-gpt-ad-1484208183654-2').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Bottom-Rectangle_300x250', [300, 250], 'div-gpt-ad-1525162576522-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Top-Leaderboard_360x60', [360, 60], 'div-gpt-ad-1553857733721-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_First_360X60', [360, 60], 'div-gpt-ad-1553863928206-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Second_360X60', [360, 60], 'div-gpt-ad-1553864402204-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Third', [360, 60], 'div-gpt-ad-1553864542641-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/MobileResponsive_Ad_Fourth_360x60', [360, 60], 'div-gpt-ad-1554371562719-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Welcome_Banner_Mobile_250_250', [250, 250], 'div-gpt-ad-1678796604493-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_250_250_1', [250, 250], 'div-gpt-ad-1702294348598-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_250_250_2', [250, 250], 'div-gpt-ad-1702294487880-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Home_Page_Image_500_250', [500, 250], 'div-gpt-ad-1702294858993-0').addService(googletag.pubads());
+    googletag.defineSlot('/60559764/Welcome_New_640x480', [640, 480], 'div-gpt-ad-1711602811938-0').addService(googletag.pubads());
+
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!--Google DFP Code Ends-->
+</head>
+<body class="usualbodyclass">
+<!-- <iframe style="width: 100%;height: 15px;background-color: darkviolet;border: 0px;"></iframe> -->
+
+<div id="carousel-example-generic" style="display: none; background-color: #bf1e2e;" class="carousel topSlide slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox" style="max-width: 360px;margin: 0 auto;">
+    <!--<div class="item active">
+          </div>-->
+    <!--<div class="item">
+          </div>-->
+    <div class="item active">
+      <center><!-- /60559764/MobileResponsive_Ad_Third -->
+<div id='div-gpt-ad-1553864542641-0' style='height:60px; width:360px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1553864542641-0'); });
+</script>
+</div></center>    </div>
+    <div class="item">
+      <center><!-- /60559764/MobileResponsive_Ad_Fourth_360x60 -->
+<div id='div-gpt-ad-1554371562719-0' style='height:60px; width:360px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1554371562719-0'); });
+</script>
+</div></center>    </div>
+  </div>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52Q28F9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=387548664734018&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<style type="text/css">
+    .ad-show {
+        display: block !important;
+    }
+    .ad-hide {
+        display: none !important;
+    }
+    
+    /* Fixed positioning for mobile ads */
+    .welcome_mobile {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        z-index: 9999;
+        display: none;
+    }
+    
+    .welcome_desktop {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        z-index: 9999;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .welcome_mobile {
+            width: 90vw;
+            max-width: 300px;
+        }
+        
+        .welcome_mobile div[id*='div-gpt-ad'] {
+            width: 100% !important;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<script>
+    function closetimer1() {
+        $("#welcome-ad-wrapper1").hide();
+        ad1_seconds = 0;
+    }
+
+    function closetimer3() {
+        $('#welcome-ad-wrapper3').hide();
+        ad3_seconds = 0;
+    }
+</script>
+
+
+
+
+
+
+
+<section class="headerlogout">
+   <div class="container">
+            
+      
+       
+
+         </div>
+</section>
+<section class="langConvertor">
+  <div class="container">
+    <div class="col-md-5 col-sm-5">
+      <div class="socialHeader">
+        <ul>
+          <li><a href="https://www.facebook.com/PowerSystemsDesign/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/powersystemsdesign/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/PSD_Global" target="_blank"><img class="twitter-img" src="../twitter_images/logo.svg"></a></li>
+          <li><a href="https://www.linkedin.com/company/powersystemsdesign/about/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="../psdcast/67.html" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="../rss-feeds.html"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <ul class="langList">
+        <li><a href="https://www.powersystemsdesign.com/">English</a></li>
+        <li><a href="https://www.powersystemsdesignchina.com/">中国 China</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <form name="headerSearchForm" id="headerSearchForm" method="get" action="https://www.powersystemsdesign.com/search-results">
+        <div class="form-group">
+          <div class="input-group">
+              <input class="form-control" name="headerSearch" id="headerSearch" required="required" placeholder="Search" type="text" value="">
+              <span class="input-group-addon" style="background: #bf1e2e;">
+                <input type="submit" value="" style="    margin-left: -5px;width:30px;background: transparent url('../searchicon.png') no-repeat center center;background-size:16px;" id="headerSearchButton"><!-- <i class="fa fa-search"></i> -->
+              </span>        
+          </div>
+        </div>
+       </form>  
+    </div>
+  </div>
+</section>
+
+<style type="text/css">
+.relPstn{
+  position: relative;
+}
+.leftFixAd {
+  position: absolute;
+  left: -130px;
+  z-index: 99;
+}
+.rightFixAd {
+  position: absolute;
+  right: -133px;
+  top: 0;
+  z-index: 99;
+}
+.leftFixAd + div {
+  margin-left: -10px;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1090px;
+}
+}
+@media(max-width: 1199px){
+  .relPstn{
+    display: none;
+  } 
+}
+
+</style>
+<section class="headerAd">
+   <div class="container">
+      <div class="relPstn">
+         <div class="leftFixAd">      
+             
+            <!-- <div id='div-gpt-ad-1484319980338-0' style='height:660px; width:120px; display: block;'>
+               <script>
+               googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484319980338-0'); });
+               </script>
+            </div> -->
+                     </div>
+          
+            <div>
+                
+              
+               <!-- <div id='div-gpt-ad-1484208183654-2' style='height:90px; width:1058px; display: block;margin: 0 auto 20px;' >
+               <script>
+               googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484208183654-2'); });
+               </script>
+               </div>  -->
+                           </div>
+                     <div class="rightFixAd">
+                   
+            
+            <!-- <div id='div-gpt-ad-1484319980338-1' style='display: block;'>
+            <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1484319980338-1'); });
+            </script>
+            </div>  -->
+                     </div>
+      </div>
+   </div>
+</section>
+
+
+<section class="header" style="">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.powersystemsdesign.com/"><img src="../psd_logo_new.jpg" class="psd-logo-new" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="../home/77.html" >Home</a></li>
+                                                <li><a href="../about-power-systems-design/2.html" >About PSD</a></li>
+                                                <li><a href="../subscribe-to-psd-magazines/4.html" >Subscribe</a></li>
+                                                <li><a href="../login-to-manage-subscription/117.html" >Manage Subscription</a></li>
+                                                <li><a href="../2024-media-information/76.html" >Media Info</a></li>
+                                                <li><a href="javascript:void(0)" onclick="dis_joinpop()">Join Newsletter</a></li>
+                                                <li><a href="../glossary/139.html" >Glossary</a></li>
+                                        </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+<div class="clearfix"></div>
+<div class="top-two showOnAdd">
+    </div>
+<!-- <div class="clearfix"></div> -->
+<div class="container"><hr></div>
+<div class="clearfix"></div>
+<section class="secMenu">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                                            <li><a class="nav-link" href="../product-news/6.html">Product News</a></li>
+                                                <li><a class="nav-link" href="../industry-news/8.html">Industry News</a></li>
+                                                 <li class="dropdown">
+                          <a href="../departments/11.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments<span class="caret"></span></a>
+                          <ul class="dropdown-menu">  
+                                                    <li><a href="../design-tips/18.html">Design Tips</a></li>
+                                                        <li><a href="../dilbert/26.html">Dilbert</a></li>
+                                                        <li><a href="../distribution/23.html">Distribution</a></li>
+                                                        <li><a href="../final-thought/131.html">Final Thought</a></li>
+                                                        <li><a href="../market-watch/17.html">MarketWatch</a></li>
+                                                        <li><a href="../notable-newsworthy/97.html">Notable & Newsworthy</a></li>
+                                                        <li><a href="../technical-features/22.html">Technical Features</a></li>
+                                                        <li><a href="../tech-talk/149.html">TechTalk</a></li>
+                                                        <li><a href="../view-point/14.html">ViewPoint</a></li>
+                                                    </ul>
+                        </li>
+                                                 <li class="dropdown">
+                          <a href="../design-centers/27.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Design Centers<span class="caret"></span></a>
+                          <ul class="dropdown-menu">  
+                                                    <li><a href="../automotive-transportation/35.html">Automotive & Transportation</a></li>
+                                                        <li><a href="../batteries-other-energy-storage-devices/145.html">Batteries & Other Energy Storage Devices</a></li>
+                                                        <li><a href="../consumer/29.html">Consumer</a></li>
+                                                        <li><a href="../data-centers/140.html">Data Centers</a></li>
+                                                        <li><a href="../ev-hybrids-and-charging-infrastructure/154.html">EV, Hybrids & Charging Infrastructure</a></li>
+                                                        <li><a href="../industrial/39.html">Industrial</a></li>
+                                                        <li><a href="../internet-of-things/109.html">IoT & Smart Cities</a></li>
+                                                        <li><a href="../lighting-illumination/36.html">Lighting & Illumination</a></li>
+                                                        <li><a href="../medical-healthcare-wellness/33.html">Medical, Healthcare & Wellness</a></li>
+                                                        <li><a href="../military-aerospace-hi-rel/95.html">Military, Aerospace & Hi-Rel</a></li>
+                                                        <li><a href="../design-center-motor-drives-robotics-controls/30.html">Motor Drives, Robotics & Controls</a></li>
+                                                        <li><a href="../power-modules/155.html">Power Modules</a></li>
+                                                        <li><a href="../power-semiconductors/146.html">Power Semiconductors</a></li>
+                                                        <li><a href="../power-supplies-magnetics/135.html">Power Supplies</a></li>
+                                                        <li><a href="../powering-ai/159.html">Powering AI</a></li>
+                                                        <li><a href="../powering-communications/32.html">Powering Communications</a></li>
+                                                        <li><a href="../embedded-power/132.html">Powering Embedded Systems</a></li>
+                                                        <li><a href="../renewable-energy/28.html">Renewable Energy</a></li>
+                                                        <li><a href="../smart-power-grid/34.html">Smart Power Grid</a></li>
+                                                        <li><a href="../test-measurement/93.html">Test & Measurement</a></li>
+                                                        <li><a href="../wearables-nanopower/136.html">Wearables & Nanopower</a></li>
+                                                        <li><a href="../white-goods/37.html">White Goods</a></li>
+                                                        <li><a href="../wide-bandgap-semis/138.html">Wide-Bandgap Semis</a></li>
+                                                    </ul>
+                        </li>
+                                                <li><a class="nav-link" href="../psdcast/67.html">PSDcast</a></li>
+                                                <li><a class="nav-link" href="../psdwebinar/125.html">PSDwebinar</a></li>
+                                                <li><a class="nav-link" href="../digital-magazines/73.html">Digital Magazines</a></li>
+                                                <li><a class="nav-link" href="../editor-blogs/133.html">Editor Blogs</a></li>
+                                        </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+<div class="clearfix"></div>
+<div class="container"><hr></div>
+<div class="clearfix"></div>
+<section class="breadCrumbs_section">
+   <div class="container">
+            <ol class="breadcrumb text-left">
+            <li><a href="../home.html">Home</a></li>
+                        <li class="active">Power Systems Corporation Terms of Service</li>
+         </ol>
+            </div>
+</section>
+<section class="middle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-3 text-center advertHd">
+         <div id="skyscraper_div1">
+                      
+                  <div valign="top" class="column1">
+                    <p>&nbsp;</p>
+                    <!-- /60559764/Top-Left-Skyscraper_160x600 -->
+<div id='div-gpt-ad-1450361781743-10' style='height:600px; width:160px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-10'); });
+</script>
+</div>
+<br>                    <p>&nbsp;</p>
+                  </div>
+                       </div>
+        
+
+       <!--  <img class="img-responsive" src="/images/3.jpeg"> -->
+      </div>
+      <div class="col-md-8 col-sm-6">
+                  <div valign="top" class="column2">
+                              <p>&nbsp;</p>
+                    <center> <!-- /60559764/Top-Rectangle_300x250 -->
+<div id='div-gpt-ad-1450361781743-11' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-11'); });
+</script>
+</div></center>
+                        </div>
+        <!-- /60559764/Search-Box-Logo_154x45 -->
+<div id='div-gpt-ad-1450361781743-8' style='height:45px; width:154px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450361781743-8'); });
+</script>
+</div>            <div>
+<div class="termServiceMain">
+	<div class="pm-inner"><h1 class="page-title">Power Systems Corporation Terms of Service</h1></div>					
+		<div class="p-int-mod-main">
+			<div class="mg-inner"><!--  -->
+				<div id="pm2482" class="pm100" style="position: relative; float: left; width:100%;">
+					<div class="pm-inner">
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">Last Updated: October 2, 2014.</p>
+						</div>
+						<div class="ss ss-redhead">
+							<h2 class="head1">1. Acceptance of Terms</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								POWER SYSTEMS CORPORATION, dba Power Systems Design and dba Santana Communications International and its online and print properties collectively, "we" or "POWER SYSTEMS CORPORATION" provide our Internet sites and print properties the content, products and services offered on or through those sites (collectively, the "Services"), to you subject to the following Terms of Service ("TOS"). Your use of the Services in whole or in part constitutes your binding acceptance of these TOS. If you do not agree to these TOS, you should not use the Services. Some Services may be subject to additional posted rules, policies and terms. When you use those Services, you and POWER SYSTEMS CORPORATIONshall be subject to those additional conditions, which are incorporated by reference into these TOS (and, consequently, form part of your agreement with us). Other Services may be governed by different usage terms. In the event of an inconsistency between these TOS and any additional posted conditions or separate usage terms, the provisions of the additional conditions and/or separate usage terms shall control. Because we may modify all or any part of these TOS from time to time without notice to you, you should check back often so you are aware of your current rights and responsibilities. Your continued use of a given Service after changes to the TOS have been published on that Service constitutes your binding acceptance of the updated TOS. If at any time the TOS are no longer acceptable to you, you should immediately cease all use of the Services.
+							</p>
+						</div>
+						
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">2. Description of Services</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								The Services include a combination of content that we create and that other third party content suppliers create. In addition, some Services provide you and other users with an opportunity to submit, post, display, transmit and/or exchange information, ideas, opinions, photographs, images, video, audio, creative works or other information, messages, transmissions or material to us or others on or through that Service (collectively, the "Postings"). We adhere to high journalistic standards, and use every reasonable effort to provide informative and relevant content as part of the Services. However, in using the Services, you may be exposed to content that you find offensive, indecent, objectionable or that is inaccurate and you bear all risks associated with using that content. You understand that the Services are provided by POWER SYSTEMS CORPORATION"AS IS", as further described in Section 15 of these TOS, and that POWER SYSTEMS CORPORATION does not guarantee the accuracy, integrity or quality of any content available on or through the Services. In this regard, you acknowledge that you may not rely on any of this content, whether created by or submitted to POWER SYSTEMS CORPORATION, including, but not limited to, product reviews, white papers, product descriptions, stock quotes, or Postings on any bulletin board, chat, news group, community, forum or other feedback section of the Services (collectively, the "Forums"). You understand that from time to time, you may communicate with, receive communications from, or otherwise participate in or use the services or obtain goods and services of or from, third parties (e.g., advertisers) as a result of your use of the Services. All such communication, interaction and participation is strictly and solely between you and such third party and POWER SYSTEMS CORPORATIONshall not be responsible or liable to you in any way in connection with these activities or transactions (including, but not limited to, any representations, warranties, covenants, contracts or other terms or conditions that may exist between you and the third party, or any goods or services you may purchase or obtain from any third party). In particular, the appearance or availability of links to third party sites on or through the Services does not constitute an endorsement by POWER SYSTEMS CORPORATIONwith respect to the content, advertising, products, or other materials available on or from such sites. You further understand and agree that the Services may include certain communications from POWER SYSTEMS CORPORATION(such as administrative messages and certain newsletters), and that these communications are considered part of the Service and you may not be able to opt out of receiving them. Unless explicitly stated otherwise, any new features that augment or enhance the current Services shall be subject to the TOS. Finally, you are responsible for obtaining access to the Services and that access may involve third party fees (such as Internet service provider or airtime charges). You are responsible for those fees, including those fees associated with the display or delivery of advertisements. In addition, you must provide and are responsible for all equipment necessary to access the Services.
+							</p>
+						</div>
+						
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">3. General Rules of Conduct</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Your use of the Services is subject to all applicable local, state, national and international laws and regulations, and you agree not to violate such laws and regulations. In addition, you agree that:<br><br>
+								
+								<ul>
+									<li>you will not interfere with another member's use and enjoyment of the Services; you will not interfere with or disrupt the security measures of the Services; you will not interfere with or disrupt networks connected to the Services, and will comply with all regulations, policies and procedures of such networks; and</li>
+									<li>you will comply with United States law regarding the transmission of technical data exported from the United States.</li>
+									<li>you will not use the Services to send or result in the transmission of junk e-mail, chain letters, duplicative or unsolicited messages, or so-called "spamming"; harm minors in any way; promote or generate revenue for any business or commercial purposes, whether or not for a charge or through linking with any other web services or pages, unless authorized by Power Systems Corporation; impersonate any person or entity; intentionally or unintentionally violate any applicable local, state, national or international law; "stalk" or otherwise harass another;</li>
+									<li>You will not collect or store personal data about other users; and</li>
+									<li>You will not reproduce, modify, distribute or republish materials contained on the Service (either directly or by linking) without our prior written permission. You will not alter or remove any trademark, copyright or other notice from copies of content. You may, however, download material from the site (one machine readable copy and one print copy per page) for your personal, noncommercial use only. We reserve all rights in and title to all material so downloaded. All trademarks, service marks, trade names, trade dress and logos appearing on the site and in print are the property of their respective owners, including in some instances POWER SYSTEMS CORPORATION.</li>
+								</ul>
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">4. Postings</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Although we reserve the right to edit Postings prior to their inclusion on the Services, as a general matter POWER SYSTEMS CORPORATIONdoes not screen or monitor such content. Therefore, you understand that you are solely responsible for all Postings and other materials, whether publicly posted or privately transmitted, that are uploaded, posted, emailed, transmitted or otherwise made available from your email address on our through the Services. You further agree that your Postings will not violate these TOS. Specifically, you represent and warrant that your Postings will not contain any material that:<br><br>
+								<ul>
+									<li>is false, inaccurate, or misleading; infringes any third party's copyright, patent, trademark, trade secret or other proprietary rights, or rights of publicity or privacy; violates a nondisclosure agreement, or violates any law or regulation (including, without limitation, those governing export control, unfair competition, or false advertising); is defamatory, constitutes trade libel or product disparagement, or is unlawfully threatening or harassing; is obscene or contains child pornography; or</li>
+									<li>contains viruses, Trojan horses, time bombs, worms, cancelbots, easter eggs or other computer programming routines that may damage or interfere with the operation of any system, or unlawfully intercept any data or personal information.</li>
+								</ul>
+								<br><br>
+								You also agree that you will not:
+								<br><br>
+								<ul>
+									<li>reproduce, distribute, republish or retransmit material posted by any other Services users without the permission of that user and POWER SYSTEMS CORPORATIONtake any action that imposes an unreasonable or disproportionately large load on our infrastructure; or</li>
+									<li>interfere or attempt to interfere with the proper working of the Services, any activities conducted on or through the Services, or any networks through which you access the Services.</li>
+								</ul>
+								<br><br>
+								You further represent and warrant that:
+								<br><br>
+								<ul>
+									<li>your Postings will be original and/or you will obtain all third-party permission necessary for the use of the Postings as set forth below; you are the sole and exclusive owner of all rights herein conveyed to POWER SYSTEMS CORPORATIONand its affiliates; and</li>
+									<li>
+										you have the full and restricted power to convey such rights to POWER SYSTEMS CORPORATIONand its affiliates free and clear of the claims of any other person or entity.<br>
+										In sum, Postings do not reflect the views of POWER SYSTEMS CORPORATIONand POWER SYSTEMS CORPORATIONdoes not verify, endorse, of vouch for any such content. We do, however, enforce these TOS, and if we determine in our sole discretion that any Posting is inaccurate, was posted without authorization, or otherwise does or may violate these TOS, we reserve the right, at any time, without prior notice and without limiting any and all other rights we may have, at law or in equity, to (a) modify, refuse or remove the Posting; (b) revoke the applicable user's right to use the Services; and/or (d) use any technological, legal, operational or other means available to POWER SYSTEMS CORPORATIONto enforce the provisions of these TOS, including, without limitation, blocking specific IP addresses or deactivating the applicable user's registration. 
+										<br><br>
+									</li>
+								</ul>
+								<br>
+								Finally, you specifically grant to POWER SYSTEMS CORPORATIONand its affiliates and service providers (or warrant that the owner of such content grants to POWER SYSTEMS CORPORATIONand its affiliates and service providers) a perpetual, worldwide, royalty-free, irrevocable, nonexclusive right and license, sublicensable through multiple tiers, to:
+								<ul>
+									<li>use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform and display all Postings submitted by you or through your account, in whole or in part; use, in whole or in part, your name, likeness, photograph, voice, company name, screen name, e-mail address and/or other identifying information submitted by you as part of or in connection with such Postings ("Image"), and reproduce, publish, create derivative works from, distribute, perform and display materials containing the same; and</li>
+									<li>incorporate the Postings and the Image in other works in any form, media or technology now known or later developed throughout the universe, and reproduce, publish, display and otherwise distribute the same.
+	For sake of clarity, by virtue of the above grant, you also give POWER SYSTEMS CORPORATIONand its affiliates permission to copy your Postings and the Image as part of the normal backup process and/or to archive discussions containing your Postings and/or the Image.</li>
+								</ul>
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">5. POWER SYSTEMS CORPORATIONProprietary Rights</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								All Services software, design, text, images, photographs, illustrations, audio and video material, artwork, graphic material, database, proprietary information and all copyrightable or otherwise legally protectable elements of the Services, including, but not limited to, the selection, sequence and 'look and feel' and arrangement of items, and all trademarks, service marks and trade names, excluding any of your Postings (individually and/or collectively, "Material"), are the property of POWER SYSTEMS CORPORATION, its subsidiaries, affiliates, licensors or suppliers and are legally protected, without limitation, under U.S. Federal and State, as well as applicable foreign, laws, regulations and treaties. The compilation of all content on each site is the exclusive property of POWER SYSTEMS CORPORATION. You may not reproduce, modify, create derivative works from, display, perform, publish, distribute, disseminate, broadcast or circulate to any third party (including, without limitation, on or via a third party web site), or otherwise use, any materials contained on the Services (except for your Postings) without the express prior written consent of Power Systems Corporation or its owner if POWER SYSTEMS CORPORATIONis not the owner. In particular, you may not frame any Material without the express prior written consent of POWER SYSTEMS CORPORATIONor the Material owner. You must not alter, delete or conceal any copyright or other notices contained on the Services, including notices on any Material you download, transmit, print or reproduce from the Services. Any unauthorized or prohibited use of any Material, may subject you to civil liability or criminal prosecution, or both, under applicable federal and state laws. You further agree not to access the Service by any means other than through the interface that is provided by POWER SYSTEMS CORPORATIONfor use in accessing the Service.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">6. Forums</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Some of our Services give users the opportunity to participate in Forums operated by POWER SYSTEMS CORPORATION by a third party. We ask that our users exercise appropriate caution when participating in any type of Forum. In particular, please remember that if you publicly disclose personal identifying information, such as your name or email address, in connection with a Forum, the information may be collected and used by others. You should also take reasonable precautions with regard to any material you download from or through Forums (for example, scanning for viruses or other damaging computer programming routines). Finally, you agree to use the Forums only to send and receive messages and material that are proper and related to that particular Forum.										
+							</p>
+						</div>
+						
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">7. Directories and Other Membership Listings</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Some of our Services allow users to make some of their personal information (including, but not limited to, name, company affiliation and job title) available to other visitors as part of a membership directory or other listing for that Service. Please remember: If you do not want certain information to be available to other Service users, you should not include it in any membership directory listing. As with all other content on the Services, we reserve the right to refuse (or remove) listings in our sole discretion, and without prior notice, if we determine that they are inaccurate, were posted without authorization, or otherwise violate these TOS.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">8. Promotions</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Some of our Services may from time to time conduct promotions, including, but not limited to, auctions, contests and sweepstakes ("Promotions"). Each Promotion will have additional terms, conditions and rules which will be posted or otherwise made available to you and, for purposes of each Promotion in which you participate, will be deemed incorporated by reference into these TOS (and therefore a part of your agreement with POWER SYSTEMS CORPORATION).
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">9. Fee-Based Services</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Some of our Services require that you to pay a fee to access or use such Service, as described in the specific conditions included where those Services are offered. You agree to pay all fees and charges that you incur. Unless otherwise noted, all currency references are in U.S. dollars. We may, upon notice if required by applicable laws, at any time change the amount of, or basis for determining, any fee or charge, or institute new fees or charges. All fees and charges are payable in accordance with payment terms in effect at the time the fee or charge becomes payable.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">10. Registrations Obligations</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								Some of our Services require that you register with that Service in order to access or use it. If such registration is required, you agree that you will provide accurate information (such as your real name and a valid e-mail address) and will update your relevant information if it becomes outdated. If you provide any information that is, or that POWER SYSTEMS CORPORATIONin its reasonable discretion determines may be, untrue, inaccurate, not current or incomplete, POWER SYSTEMS CORPORATIONhas the right, without prior notice, to suspend or terminate your account and refuse any and all current or future use of the Services (or any portion thereof). For more detailed information about how we treat the registration information you provide to us, please see our Privacy Notice, which is incorporated by reference into these TOS (and therefore a part of your agreement with us).
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">11. Passwords and Other Security Issues</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								If we issue you a password, you agree to help protect your information by guarding that password, and by changing it as soon as possible if you believe its security has been compromised. If POWER SYSTEMS CORPORATION allows you to choose a username and you select, in POWER SYSTEMS CORPORATION's sole discretion, one that is obscene, indecent, abusive or which is otherwise objectionable, POWER SYSTEMS CORPORATION has the right, without prior notice to you, to automatically change your username, delete your Postings under it, deny you access to the Services, or any combination of these options. You may not transfer your registration, password or user name to another person or share it with anyone. We will not be responsible for any loss or damage that may result if you fail to comply with these requirements. If you believe your information has been used without your authorization, you agree to notify POWER SYSTEMS CORPORATION immediately.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">12. Privacy Policy</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								POWER SYSTEMS CORPORATION respects your privacy. Please see our Privacy Notice for important information and disclosures relating to the collection and use of your personally identifiable information in connection with your use of the Services.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">13. Service Deactivation or Termination</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								We have the right, but not the obligation, to take any of the following actions in our sole discretion at any time and for any reason without giving you any prior notice:
+								<ul>
+									<li>Restrict, suspend or terminate your access to all or any part of our Services;</li>
+									<li>Refuse, move or remove for any reason any material that you submit on or through the Services;</li>
+									<li>Refuse, move, or remove any content that is available on or through the Services;</li>
+									<li>Deactivate or delete your accounts and all related information and files in your account;</li>
+									<li>Establish general practices and limits concerning use of the Services<br>We may take any of the above actions for any legitimate business reason, as determined by POWER SYSTEMS CORPORATION in its sole discretion, including, but not be limited to, (a) breaches or violations of the TOS or other incorporated agreements or guidelines, (b) requests by law enforcement or other government agencies, (c) a request by you, (d) discontinuance or material modification to the Services (or any part thereof), and (e) unexpected technical or security issues or problems. You agree that we will not be liable to you or any third party for taking any of these actions.</li>
+								</ul>
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">14. Indemnification</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								You hereby agree to indemnify, defend and hold POWER SYSTEMS CORPORATION, its subsidiaries, parent corporation and affiliates, and all of their respective officers, directors, owners, employees, agents, licensors, representatives, licensors and suppliers (collectively, the "POWER SYSTEMS CORPORATION Parties"), harmless from and against any and all liability, losses, expenses, damages and costs (including attorneys' fees), incurred by any POWER SYSTEMS CORPORATION Party in connection with any claim arising out of your use of the Services, any use or alleged use of your accounts or your passwords by any person, whether or not authorized by you, the content you submit, post, transmit or make available through the Services, your violation of these TOS, your connection to the Services, or your violation of the rights of any other person or entity.
+								<br><br>
+								POWER SYSTEMS CORPORATION reserves the right to assume, at its sole expense, the exclusive defense and control of any claim, action or other matter for which you are required to indemnify us, and all negotiations for settlement or compromise thereof, and you agree to fully cooperate with POWER SYSTEMS CORPORATION in the defense of any such claim, action, settlement or compromise negotiations, as requested by POWER SYSTEMS CORPORATION. 
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">15. Disclaimers of Warranties</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								THE SERVICES, AND MATERIALS, PRODUCTS AND POSTINGS ARE MADE AVAILABLE ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY REPRESENTATION, PROMISE OR WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, OR ANY GUARANTY OR ASSURANCE THE SERVICES WILL BE AVAILABLE FOR USE, OR UNINTERRUPTED OR ERROR FREE, OR THAT ALL PRODUCTS, FEATURES, FUNCTIONS OR OPERATIONS WILL BE AVAILABLE OR PERFORM AS DESCRIBED OR THAT ANY ERRORS WILL BE CORRECTED. IN ADDITION, ANY MATERIAL THAT YOU DOWNLOAD OR OTHERWISE OBTAIN THROUGH OUR SERVICES IS DONE AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY POTENTIAL DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM YOUR DOWNLOAD OF ANY SUCH MATERIAL. Without limiting the foregoing, POWER SYSTEMS CORPORATION is not responsible or liable for any malicious code, delays, inaccuracies, errors, or omissions arising out of your use of the Services. As between you and POWER SYSTEMS CORPORATION, you are assuming the entire risk as to the quality, accuracy, performance, timeliness, adequacy, completeness, correctness, authenticity, security and validity of any and all features and functions of the Services, including, without limitation, postings and materials associated with your use of the Services. Under no circumstances shall any POWER SYSTEMS CORPORATION Party be liable for any loss or damage caused by your reliance on information obtained through the Services. It is your responsibility to evaluate the information, opinion, advice, or other content available through the Services.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">16. Limitation of Liability</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								IN NO EVENT SHALL ANY POWER SYSTEMS CORPORATION PARTY BE LIABLE TO YOU OR ANY OTHER PERSON OR ENTITY, UNDER ANY THEORY, INCLUDING NEGLIGENCE, FOR DAMAGES OF ANY KIND ARISING FROM THE USE OF THE SERVICES, INCLUDING BUT NOT LIMITED TO DIRECT, INDIRECT, ACTUAL, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, LOST INCOME, REVENUE OR PROFITS, LOST OR DAMAGED DATA, OR OTHER COMMERCIAL OR ECONOMIC LOSS, THAT RESULT FROM YOUR USE OF, OR INABILITY TO USE, THE SERVICES, EVEN IF SUCH POWER SYSTEMS CORPORATION PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR SUCH DAMAGES ARE FORESEEABLE. BY USING THE SERVICES, YOU AGREE THAT THIS LIMITATION WILL APPLY TO ANY MERCHANDISE, SERVICES, AND CONTENT THAT MAY BE AVAILABLE THROUGH SUCH SERVICES. IN THE EVENT THAT APPLICABLE LAW DOES NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY OR DAMAGES, YOU AGREE THAT IN NO EVENT SHALL THE TOTAL LIABILITY OF ANY POWER SYSTEMS CORPORATION PARTY TO YOU FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION OF ANY KIND EXCEED ONE HUNDRED DOLLARS ($100.00). Notwithstanding any claim that a sole or exclusive remedy which is provided in this agreement may or does fail of its essential purpose, you specifically acknowledge and agree that your sole and exclusive remedy for any loss or damage shall be to have POWER SYSTEMS CORPORATION, upon written notice from you to us, attempt to repair, correct or replace any deficient Service and, if repair, correction or replacement is not reasonably commercially practicable for POWER SYSTEMS CORPORATION, in its sole discretion, to refund any monies actually paid by you for the Service involved and to terminate and discontinue your use of the Services.
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">17. Claims of Infringement.</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								POWER SYSTEMS CORPORATION respects the intellectual property of others and requires that you do the same.  In accordance with the Digital Millennium Copyright Act ("DMCA"), the text of which may be found on the U.S. Copyright Office website at www.copyright.gov/legislation/dmca.pdf, we will respond expeditiously to notices of alleged copyright infringement that are duly reported to our Designated Copyright Agent identified in the notice below.  We will disable and/or terminate the accounts of users who are repeat infringers.  If you believe that your content has been copied in a way that constitutes copyright infringement, or your intellectual property rights have been otherwise violated, please provide our Copyright Agent the following information:
+								<br><br>
+								<u>DMCA Notice of Alleged Infringement ("Notice")</u><br>
+								Identify the copyrighted work that you claim has been infringed, or if multiple works are covered by this Notice you may provide a representative list of the copyrighted works that you claim have been infringed.<br>
+	Identify the material or link you claim is infringing and provide a description of where the infringing work is located on our Internet sites.<br>
+	Provide your mailing address, telephone number and, if available, email address.<br>
+	Include both of the following statements in the body of the Notice:<br><br>
+								<ul>
+									<li>"I hereby state that I have a good-faith belief that the disputed use of the copyrighted material is not authorized by the copyright owner, its agent, or the law (e.g., fair use)."</li>
+									<li>
+										"I hereby state that the information in this Notice is accurate and, under penalty of perjury, that I am the owner or authorized to act on behalf of the owner, of the copyright or of an exclusive right under the copyright that is allegedly infringed."<br>
+										Provide your full legal name and your electronic or physical signature.<br>
+										Deliver this Notice, with all items completed, to our Designated Copyright Agent:<br>
+										By mail:<br><br>
+										Copyright Agent<br>
+										146 Charles Street<br>
+										Annapolis, MD 21401 USA<br>
+										<br><br>
+										While we consider all such notices seriously, you may be liable for damages (including costs and attorneys' fees) if you materially misrepresent that content or activity is infringing.  Accordingly, if you are uncertain whether material infringes your copyrights (including whether use of copyrighted material may constitute fair use) you may wish to seek the advice of an attorney.
+									</li>
+								</ul>
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">18. Miscellaneous</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								<i>General.</i> This site is created, controlled and operated by POWER SYSTEMS CORPORATION in the USA, and is intended solely and exclusively for residents of the United States, its territories and possessions who are at least 13 years of age or older. If you choose to access this site from another location, you are responsible for complying with local laws, if and to the extent that local laws apply. <br><br>
+								<i>Entire Agreement.</i> These TOS, including the policies referred to in these TOS, constitute the entire agreement between you and POWER SYSTEMS CORPORATION and govern your use of the Services, superseding any prior agreements between you and POWER SYSTEMS CORPORATION. As noted above, you also may be subject to additional terms and conditions that may apply when you use or purchase certain other POWER SYSTEMS CORPORATION services, affiliate services, third-party content or third-party software. These TOS cannot be changed or terminated orally. Notice. We may be required by state or federal law to notify you of certain events. You hereby acknowledge and consent that such notices will be effective upon our posting them on or through the Services or delivering them to you through email. You may update your email address by visiting the Services where you have provided contact information. If you do not provide us with accurate information, we cannot be held liable if we fail to notify you. You have the right to request that we provide such notices to you in paper format, and may do so by contacting the General Counsel, POWER SYSTEMS CORPORATION, 146 Charles Street, Annapolis, Maryland 21401. If you are a California resident, you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information.<br><br>
+								<i>Assignment.</i> You agree that the TOS may be automatically assigned, in whole or in part, by POWER SYSTEMS CORPORATION or its affiliate to a third party, in our sole discretion, in connection with a merger, acquisition, reorganization or sale of substantially all of our assets, in whole or in part. <br><br>
+								<i>Choice of Law and Forum.</i> The formation, construction and interpretation of this agreement shall be controlled by the laws of the State of Maryland, giving no effect to choice of law provisions. The U.N. Convention of Contracts for the International Sale of Goods is expressly excluded from any interpretation of this Agreement. Any dispute relating to this agreement shall be subject to the exclusive jurisdiction of the state and federal courts in Annapolis, Maryland, U.S.A., and the parties agree to submit to the personal and exclusive jurisdiction of these courts. <br><br>
+								<i>No Third Party Beneficiaries.</i> You agree that, except as otherwise expressly provided in this TOS, there shall be no third party beneficiaries to this Agreement. Waiver and Severability of Terms. The failure of POWER SYSTEMS CORPORATION to exercise or enforce any right or provision of the TOS shall not constitute a waiver of such right or provision. If any provision of the TOS is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give effect to the parties' intentions as reflected in the provision, and the other provisions of the TOS remain in full force and effect. <br><br>
+								<i>Statute of Limitations.</i> You agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to use of the Service or the TOS must be filed within one (1) year after such claim or cause of action arose or be forever barred.										
+							</p>
+						</div>
+
+						<br>
+						<div class="ss ss-redhead">
+							<h2 class="head1">19. Violations</h2>
+						</div>
+						<div class="ss-text" style="text-align: left;">
+							<p class="firstP">
+								We also ask that you bring Service problems to our attention, but California residents may also choose to contact the Complaint Assistance Unit of the Division of Consumer Services of the Department of Consumer Affairs, at 400 R Street, Sacramento, California 95814 or (800) 952-5210. 
+	<br><br>
+	For questions about terms of service, the practices of this site or any dealings with POWER SYSTEMS CORPORATION, contact us at <a href="https://www.powersystemsdesign.com/pages/power-systems-corporation-terms-of-service/termsofservice@powersystemsdesign.com" target="_blank">termsofservice@powersystemsdesign.com</a>.
+							</p>
+						</div>
+
+					</div> <!-- pm-inner -->
+				</div> <!-- pm100 -->
+		<div class="pm-clear"></div>
+		</div><!-- mg-inner -->
+	</div>					
+</div><div class="modal fade" id="psdcastmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup_psdcast"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Subscribe To Our PSDcast Channel</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <b>Please subscribe me to PSD's PSDcast Channel and keep me abreast of PSDcast activity</b>
+        <br />
+        <div id="err_msg_psdcast" class="err" style="color: red;"></div>
+        <br />
+        <form name="psdastmodal" id="psdastmodal" method="POST">
+            <input class="psdcasttest form-control" type="text" placeholder="enter your email" name="PSDcastEmail" id="PSDcastEmail"/>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input class="nwbtn" type="button" value="Subscribe Now" onclick="PSDcastForm()" style="border: none;color: white;padding: 19px 23px 15px;font: 500 15px/15px;text-transform: uppercase;background: #bf1e2d;border-radius: 4px;" />
+      </div>
+    </div>
+  </div>
+</div>
+<!--add rating-->
+<div id="addratings" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Please Add Your feedback/Rating for our PSDcast</h3>
+            </div>
+            <div class="modal-body">
+                <form method="post" name="myformrating" id="myformrating">
+                    <h4>Please click on stars to rate</h4>
+                    <div class="rating-container" style="margin-top: 12px;">
+                        <input type="hidden" name="rating" id="reviews-rating" aria-required="true">
+                        <span class="label label-success" id="reviews-rating-label"></span>
+                    </div>
+                    <h4>Write Comments</h4>
+                    <p>
+                        <style type="text/css">
+                        .fa-star:before {
+                        color: orange;
+                        }
+                        .fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before
+                        {
+                        color: orange;
+                        }
+                        </style>
+                        <textarea class="form-control" name="feedback_comment" id="feedback_comment"></textarea>
+                    </p>
+                    <input type="hidden" name="ratingfor" id="ratingfor" value="">
+                    <input type="hidden" name="effectedid" id="effectedid" value="">
+                    <input type="hidden" name="artid_rating" id="artid_rating" value="">
+                    <button type="button" class="btn btn-primary login-button" onclick="return submit_rating()">Submit</button>
+                </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--psdcast audio file download-->
+<div class="modal fade" id="psdcast_audio_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Download Audio</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <b>Do you want to download <span id="art_name"></span>?</b>
+        <br />
+        
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="download_audio_file_url" id="download_audio_file_url" value="">
+        <a href="javascript:void(0);" onclick="download_audio_file()" class="btn btn-success">Download</a>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  </div></div>
+      <div class="col-md-2 col-sm-3 text-center advertHd">
+      	<div id="skyscraper_div2">
+      								
+			<div valign="top" class="column3">
+			<p>&nbsp;</p>
+			<!-- /60559764/Middle-Left-Skyscrapper_160_600 -->
+<div id='div-gpt-ad-1493964541272-0' style='height:600px; width:160px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493964541272-0'); });
+</script>
+</div><br/>			</div>
+			      	</div>      	 
+        <!-- <img class="img-responsive" src="/images/4.jpeg"> -->
+      </div>
+      
+    </div>
+  </div>
+ </section>
+<section class="footer">
+ 	<div class="container">
+ 		
+ 		<div class="row">
+ 			                            
+			        <p>&nbsp;</p>
+			                                    
+			        <p>&nbsp;</p>
+			        <center><!-- /60559764/Bottom-Rectangle_300x250 -->
+<div id='div-gpt-ad-1525162576522-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525162576522-0'); });
+</script>
+</div>
+</center> 		</div>
+ 		<hr>
+ 		<div class="row">
+ 			<div class="col-sm-4">
+ 				<div class="footer-logo">
+ 					<a href="https://www.powersystemsdesign.com/"><img src="../psd_logo_new.jpg" class="psd-logo-new"></a>
+ 				</div>
+ 			</div>
+ 			<div class="col-sm-8">
+ 				<div class="foot-link text-right" style="display: block;word-wrap: break-word;">
+ 					&nbsp;<a href='../home/78.html'>Home</a>&nbsp;|&nbsp;<a href='../site-map/75.html'>Site Map</a>&nbsp;|&nbsp;<a href='../contact/74.html'>Contact</a>&nbsp;|&nbsp;<a href='../power-systems-corporation-privacy-policy/106.html'>Privacy Policy</a>&nbsp;|&nbsp;<a href='../refund-policy/129.html'>Refund Policy</a>&nbsp;|&nbsp;<a href='107.html'>Terms of Service</a>&nbsp;|&nbsp;<a href='../power-systems-corporation-copyright/105.html'>Copyright &copy; 2025 Power Systems Design, All rights reserved</a>&nbsp; 					<!-- <a href="#">Home</a> | 
+ 					<a href="#">Site Map</a> | 
+ 					<a href="#">Contact</a> | 
+ 					<a href="#">Privacy Policy</a> | 
+ 					<a href="#">Refund Policy</a> | 
+ 					<a href="#">Terms of Service</a> | 
+ 					<a href="#">Copyright © 2019 Power Systems Corporation, All rights reserved  </a> -->
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<hr>
+ 	</div>
+ </section> 
+
+    <!-- Bootstrap core JavaScript -->
+   <!--  <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    
+<!--<div class="nwwrapper" id="nwwrapper">
+    <div class="mwclose"><a href="javascript: void(0)" onclick="closepopup()">X</a></div>
+    <div>
+        <h2>Join Our Newsletter</h2>
+        <b>Sign up today for free and be the first to get notified.</b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <form name="joinNewsletter" id="joinNewsletter" method="POST">
+            <input class="nwtest" type="text" placeholder="enter your email" name="JNEmail" id="JNEmail"/>
+            <br /><br />
+            <select class="nwtest" name="JNRegion" id="JNRegion">
+                <option value="">Select your Region</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="China">China</option>
+                <option value="Rest of Asia">Rest of Asia</option>
+                <option value="South America">South America</option>
+                <option value="Other">Other</option>
+            </select>
+            <br /><br />
+            <input class="nwbtn" type="button" value="Subscribe Now" onclick="JNLFrom()" />
+        </form>
+    </div>
+</div>
+<div class="backgradient" id="backgradient" ></div>-->
+<div class="modal fade" id="newslettermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Join Our PSD's Daily Powersurge</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+        <!--<b>Sign up today for free and be the first to get notified.</b>-->
+        <b>Sign up Today for "Everything Power Electronics" <i>The Latest News and Exclusive Content from The Editors of PSD.</i> </b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <form name="joinNewsletter" id="joinNewsletter" method="POST">
+            <input class="nwtest form-control" type="text" placeholder="enter your email" name="JNEmail" id="JNEmail"/>
+            <br />
+            <select class="nwtest  form-control" name="JNRegion" id="JNRegion">
+                <option value="">Select your Region</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="China">China</option>
+                <option value="Rest of Asia">Rest of Asia</option>
+                <option value="South America">South America</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input class="nwbtn" type="button" value="Subscribe Now" onclick="JNLFrom()" style="border: none;color: white;padding: 19px 23px 15px;font: 500 15px/15px;text-transform: uppercase;background: #bf1e2d;border-radius: 4px;" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="backgradient" id="backgradient"></div>
+<script>
+    $('#closepopup').click(function(){
+        $('#newslettermodal').modal('hide');
+        document.getElementById("backgradient").style.display = "none";
+    });
+/*function closepopup(){
+     document.getElementById("nwwrapper").style.display = "none";
+     document.getElementById("backgradient").style.display = "none";   
+}*/
+function validateEmail($email) 
+{
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	if( !emailReg.test( $email ) ) 
+	{
+		return false;
+	} 
+	else 
+	{
+		return true;
+	}
+}
+function JNLFrom()
+{
+	var error=0;
+
+	if($("#JNEmail").val()=="")
+	{
+		error++;
+		alert("Email address is required!");
+		$("#JNEmail").focus();
+		return false;
+	}
+	if(!validateEmail($("#JNEmail").val())) 
+	{
+		error++;
+		alert("Email address is invalid!");
+		$("#JNEmail").focus();
+		return false;
+	}
+    if($("#JNRegion").val()=="")
+	{
+		error++;
+		alert("Please select the region");
+		$("#JNRegion").focus();
+		return false;
+	}
+	if(error<=0)
+	{
+		saveJoinNewsLetter();
+	}
+}
+function saveJoinNewsLetter()
+{
+	var filename = "https://www.powersystemsdesign.com/ajax.php?action=saveJoinNewsLetterForm&"+$("#joinNewsletter").serialize();
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr) 
+		{
+			var dataArr = data.split("~");            
+            document.getElementById("joinNewsletter").style.display = "none";
+            document.getElementById("err_msg").innerHTML = dataArr[1];            
+			//$('#joinNewsletter')[0].reset();
+        },
+        error: function (xhr, textStatus, errorThrown) 
+		{
+			alert("Could not save due to some technical error");
+        }
+    });	
+}
+function dis_joinpop(){
+    $('#newslettermodal').modal('show');
+    //document.getElementById("nwwrapper").style.display = "inline-block";
+    document.getElementById("backgradient").style.display = "block";
+}
+</script>	  </body>
+</html>
+		<tr>
+			<td align="center" class="top-ad">
+					<div class="hidden-sm" style="position:fixed;bottom:0px;width:100%;z-index:11;left:0.3%;">
+						<center>
+							<!-- /60559764/Bottom-Leaderboard_728x90 -->
+<div id='div-gpt-ad-1478261167170-0' style='height:90px; width:728px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1478261167170-0'); });
+</script>
+</div>
+						</center>
+					</div>
+			</td>
+		</tr>
+	<div class="modal fade" id="digital_magazine_display_url" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" id="closepopup_magz"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      
+      <div class="modal-body">
+        <b>Please select the below option to view the Digital Issue</b>
+        <br />
+        <div id="err_msg" class="err"></div>
+        <br />
+        <select class="nwtest form-control" id="magazines_url_view">
+        	<option>Please Select</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/655">North America</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/654">Europe</option>
+                        	<option value="https://www.powersystemsdesign.com/print-archives-emb/656">China</option>
+                    </select>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert" style="padding: 6px;font-size: 12px;">
+    <b>This site uses cookies to enhance your visitor experience. By continuing your visit to this site, you accept the use of cookies to offer services and offers tailored to your interests. <a href="../power-systems-corporation-privacy-policy/106.html" target="_blank">(See Our Privacy Policy)</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+        I agree
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script type="text/javascript">
+	function display_magz_url(){
+		$("#digital_magazine_display_url").modal('show');
+	}
+	$('#magazines_url_view').on('change', function () {
+		//alert("coming");
+		var url = $(this).val(); // get selected value
+		if (url) { // require a URL
+			window.open(url, '_blank');
+		}
+		return false;
+    });
+    $('#closepopup_magz').click(function(){
+		$('#digital_magazine_display_url').modal('hide');
+		document.getElementById("backgradient").style.display = "none";
+	});
+
+$('#skyscraper_div1').affix({
+offset: {
+top: 550,
+bottom: function () {
+return (this.bottom = $('.footer').outerHeight(true))
+}
+}
+})
+$('#skyscraper_div2').affix({
+offset: {
+top: 550,
+bottom: function () {
+return (this.bottom = $('.footer').outerHeight(true))
+}
+}
+})
+</script>
+<script>
+  // window.dataLayer = window.dataLayer || [];
+  // window.googletag = window.googletag || { cmd: [] };
+
+  // window.addEventListener('load', function () {
+
+  //   googletag.cmd.push(function () {
+  //   	//console.log("GPT command stack is working");
+  //     googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+  //       var slotId = event.slot.getSlotElementId();
+  //       console.log("coming1");
+  //       var adInfo = {
+  //         'div-gpt-ad-1450361267255-0': { ad_type: 'Welcome Ad', advertiser: 'Infineon' },
+  //         'div-gpt-ad-1711602811938-0': { ad_type: 'Welcome Ad', advertiser: 'Herting' }
+  //       };
+  //       console.log(slotId);
+  //       if (adInfo[slotId]) {
+  //         dataLayer.push({
+  //           event: 'dfp_ad_rendered',
+  //           adUnitPath: event.slot.getAdUnitPath(),
+  //           adSlotId: slotId,
+  //           isEmpty: event.isEmpty,
+  //           size: event.size,
+  //           ad_type: adInfo[slotId].ad_type,
+  //           advertiser: adInfo[slotId].advertiser
+  //         });
+  //       }
+  //     });
+  //   });
+  // });
+</script>
+
+
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <style>
+        /* style to override the default css */
+        .bot_sec ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #b61f2b;
+        }
+        .toggle-widget-btn{
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+            height: 87px;
+            width: 87px;
+        }
+
+        .toggle-widget-btn.active-btn{
+            /* background-color: #408bf4; */
+            background-color: #b61f2b;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px, rgba(0, 0, 0, 0.2) 0px 2px 12px;
+        }
+
+        .toggle-widget-btn:hover{
+            box-shadow: none !important;
+        }
+        
+        .toggle-widget-btn img.rounded-circle{
+            object-fit: contain !important;
+            border-radius: 0 !important;
+        }
+
+        .WidgetHeaderAvatarWrapper{
+            background: #B61E2B;
+        }
+
+        .chat-bot .HeaderTextWrapper{
+            color: #fff !important;
+        }
+       
+        .chat-bot .HeaderTextWrapper .WidgetHeaderAvatarWrapper__HeaderName{
+            color: #fff !important;
+        }
+        
+        .chat-bot #chat-widget-header-description{
+            color: #E3BF4B !important;
+            font-size: 0.875rem;
+            margin: 2px;
+        }
+
+        .chat-bot .chat-wrapper-full{
+            overflow: hidden;
+        }
+
+        .chat-bot .logoMarqueeSection{
+            margin-bottom: 6px;
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            width: 100%;
+            height: 60px; 
+            min-height: 60px;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            color: #fff;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .chat-bot .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            transform: translate3d(0%, 0, 0);
+            animation-name: marquee;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            /* animation: marquee 10s linear infinite running; */
+        }
+
+
+        .chat-bot .logoMarqueeSection:hover .marquee-content  {
+            animation-play-state: paused !important;
+        }
+
+        .chat-bot .marquee-content .marqueelogo {
+            width: 120px;
+            height: 50px;
+            margin: 0 0.5em;
+            padding: 0.5em;
+            background: rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .chat-bot .marquee-content .marqueelogo img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate3d(0%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+
+        .chat-bot .chat-head-avatar{
+            padding: 5px;
+            background:#E3BF4B;
+        }        
+        
+        .chat-bot{
+            background-color: #fff;
+        }
+
+        .chat-bot .message  p.metadata-top {
+            color: rgba(0,0,0,0.6);
+        }
+
+        .chat-bot .metadata .bot-time{
+            color: rgba(0,0,0,0.6);            
+        }
+
+        .chat-bot .metadata .sender-tag {
+            font-weight: 700;
+        }
+
+        .chat-bot .message .chat-txt {
+            padding: 5px 8px;
+            background-color: #E3BF4B;
+            position: relative;
+        }
+
+        .chat-bot .message .chat-txt::before{
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -6px;
+            right: auto;
+            top: 0px;
+            bottom: auto;
+            border: 6px solid;
+            border-color: #e3bf4b transparent transparent transparent;
+        }
+
+        .chat-bot .message.outgoing .chat-txt::before{
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: initial;
+            right: -6px;
+            top: 0px;
+            bottom: auto;
+            border: 6px solid;
+            border-color: #b61f2b transparent transparent transparent;
+        }
+
+        .chat-bot .message.outgoing .chat-txt {
+            background-color: #B61E2B;
+        }
+
+        .chat-bot .chat-wrapper-full{
+            position: relative;
+        }       
+
+        .chat-bot .chat-wrapper-full::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('../assets/imgs/placholder-bot.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100px;
+            width: 100%;
+            height: 100%;
+            max-height: 100px;
+        }
+
+        .chat-bot #notSatisfiedBtn {
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            background: #fff;
+        }
+
+        .chat-bot .input-container {
+            background-color: #b61f2b;
+            border-radius: 0 !important;
+            margin-top: 5px;
+        }
+
+        .chat-bot .input-container form {
+            border-radius: 0 !important;
+        }
+
+        .bot_sec  #user_chat_contact_submit {
+            background-color: #b61f2b !important;
+        }
+
+        .chat-bot .message .chat-txt input, .chat-bot .message .chat-txt textarea{
+            background-color: #fff !important;
+            color: #000 !important;
+            border-radius: 0 !important;
+        }
+        .chat-bot .input-container form input[type=text]{
+            font-size: 2rem!important;
+        }
+        span.tooltip-trigger {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-container:hover .custom-tooltip {
+    visibility: visible;
+}
+.custom-tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: -0.4rem;
+    left: -12.5rem;
+    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.25);
+}
+.tooltip-content {
+    margin-bottom: 8px;
+}
+.tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-container:hover .custom-tooltip {
+    visibility: visible;
+}
+        @media only screen and (max-width: 450px) {
+            .chat-bot.open{
+                width: 100% !important;
+                height: 100% !important;
+                inset: 0 !important;
+                max-width: 100% !important;
+                max-height: 100% !important;
+                position: fixed;
+                margin: 0;
+            }
+
+            .chat-bot  .close-widget{
+                display: block !important;
+                background: #e3bf4b;
+                color: #000 !important;
+                border-radius: 100px !important;
+                opacity: 1;
+                font-weight: 700;
+                border: 0;
+                font-size: 1rem !important;
+                line-height: 1.125rem;
+                box-sizing: content-box;
+                width: 20px;
+                height: 20px;
+            }
+
+            .s450-rounded-top {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            .chat-bot .container-chat{
+                height: calc(100% - 68px);
+            /*max-height: 84vh;*/
+            }
+
+
+        .chat-bot .chat-wrapper-full::before {
+            max-width: 60px;
+            width: 100%;
+            height: 100%;
+            max-height: 60px;
+        }
+
+        .chat-bot .container-chat .chat {
+            max-height: 80vh;
+            }
+            
+        }
+        .panel {
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
+  border-radius: 5px;
+  font-size: 90%;
+  text-align: center;
+  padding: 30px 20px;
+  max-width: 400px;
+}
+
+.panel form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel fieldset, label { 
+  margin: 0; 
+  padding: 0; 
+}
+
+.panel h1 { 
+    font-size: 22px;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+.panel fieldset {
+  margin: 20px 0 20px;
+}
+
+
+.panel .rating { 
+  border: none;
+  float: left;
+}
+
+.panel .rating > input { display: none; } 
+.panel .rating > label:before { 
+  margin: 5px;
+  font-size: 30px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.panel .rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.panel .rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+
+.panel .rating > input:checked ~ label, /* show gold star when clicked */
+.panel .rating:not(:checked) > label:hover, /* hover current star */
+.panel .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.panel .rating > input:checked + label:hover, /* hover current star when changing rating */
+.panel .rating > input:checked ~ label:hover,
+.panel .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.panel .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.panel input, label {
+  cursor: pointer;
+}
+
+.panel input[type="submit"] {
+  margin-top: 5px;
+  background-color: #302d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+
+.panel input[type="submit"]:focus {
+  outline: 0;
+}
+
+.panel input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.panel input[type="submit"]:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.panel .fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.panel .fa-heart:before {
+  content: "\f004";
+  font-family: FontAwesome;
+}
+    </style>
+
+    <!-- Google tag new G4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEQDKYX7YT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HEQDKYX7YT');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52Q28F9');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+    // Get the current time in the format of HH:mm AM/PM
+        function getTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var amPm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        return hours + ':' + minutes + ' ' + amPm;
+        }
+        function getPrevTime(timestamp) {
+        var now = new Date(timestamp*1000);
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var amPm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        return hours + ':' + minutes + ' ' + amPm;
+        }
+    </script>
+</head>
+
+<body style="background: none;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52Q28F9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <input type="hidden" name="" id="">
+    <div class="container" id="chatContainer"></div>
+    <div class="bot_sec" style="position: fixed;bottom: 21px;right: 36px;min-width: 401px; z-index: 2147483647;">
+        <div class="chat-bot-preview position-relative">
+            <div class="chat-right">                
+                <div class="chat-bot" id="chat_widget" style="display: none;">
+                    <nav class="WidgetHeaderStyleWrapper primaryClr widget-background-panel s450-rounded-top" >
+                        <div class="WidgetHeaderStyleWrapper">
+                            <div class="WidgetHeaderAvatarWrapper text-start d-flex justify-content-between align-items-center p-3">
+                                <div class="chat-heading-avatar">
+                                    <div class="CustomChatHeading">
+                                        <div class="chat-head-avatar primary-clr rounded-circle">
+                                            <img src="../assets/imgs/psd_lighten_logo.svg" alt="Avatar" id="imagePreview" class="avtar_bz image_preview rounded-circle" style="object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="HeaderTextWrapper text-light px-3">
+                                    <h5 class="WidgetHeaderAvatarWrapper__HeaderName mb-0 fs-5 fw-bold">
+                                        <div class="WidgetHeaderAvatarWrapper">
+                                            <span class="widget-header-name py-0" id="chat-widget-header-text">PowerPal</span>
+                                        </div>
+                                    </h5>
+                                    <div data-test-type="timestamp" id="chat-widget-header-description" class="AvailabilityMessage small text-green indicator-div" style="display: none;" >Support Typing...</div>
+                                </div>
+                                
+                                <button onclick="window.location= 'https:\/\/www.powersystemsdesign.com/PowerPal.php?page_id=107'; " class="tooltip-container shadow-none btn text-light p-0 fs-2 btn-transparent" style="display: block !important;background: #e3bf4b;color: #000 !important;border-radius: 100px !important;opacity: 1;font-weight: 700;border: 0;font-size: 1rem !important;line-height: 1.125rem;box-sizing: content-box;width: 20px;height: 20px;"><i class="fa fa-expand"></i>
+                                <div class="">
+                                <span class="tooltip-trigger"></span>
+                                <div class="custom-tooltip">
+                                    <div class="tooltip-content">
+                                    <p>Click to expand and explore your search history</p>
+                                    </div>
+                                    <div class="tooltip-arrow"></div>
+                                </div>
+                                </div>
+                                </button>
+                                <button class="close-widget d-none shadow-none btn text-light p-0 fs-2 btn-transparent">×</button>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container-chat">
+                        <div class="chat-wrapper-full">
+                            <div style="font-size: 1rem; margin: 0px 0px 0px 15px;" >Sponsored by:</div>
+                            <div class="logoMarqueeSection">
+                                <!-- both marquee-content div will be here -->
+                                <div   >
+                                                                            <a target="_blank" onclick="redirectToSponsor('OQ==','https://www.powersystemsdesign.com/');" style="cursor: pointer;"><img src="../sponsers/1686550848-psd_loho.jpeg" class="marqueelogo" style="width: auto; max-width: none;">
+                                            
+                                        </a>
+                                                                        </div>
+                                                                        
+                            </div>
+                            <div class="chat">
+                                <div class="message">
+                                    <div class="metadata">
+                                        <p class="metadata-top mb-0">
+                                            <span class="sender-tag">PowerPal</span>
+                                            <span class="bot-time" id="chat_time"></span>
+                                        </p>
+                                    </div>
+                                    <div class="chat-txt primaryClr" id="welcomeMessageDisplay">
+                                        Hello, I am your personal PowerPal. How may I assist you today?
+                                    </div>
+                                </div>
+                                                            </div>
+                            <div id="notSatisfiedBtn" style="bottom: 60px;" class="w-100" onclick="window.open('https:\/\/openai.com/','_blank');">Powered by OpenAI</div>      
+                            <div class="input-container primaryClr">
+                                <form id="messageForm">
+                                    <input type="text" placeholder="Type a message..." id="message-input" autocomplete="off">
+                                    <input type="hidden" name="C76149" id="C76149" value="0">
+                                    <input type="hidden" name="U62843" id="U62843" value="0">
+                                    <button type="submit" id="send-message"><span class="send-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <g clip-path="url(#clip0_1_31)">
+                                                <path d="M14.9662 0.643126C15.0003 0.557941 15.0087 0.464622 14.9902 0.374738C14.9718 0.284854 14.9274 0.202358 14.8625 0.137477C14.7976 0.0725959 14.7151 0.0281832 14.6252 0.009745C14.5353 -0.00869323 14.442 -0.000346201 14.3568 0.0337513L0.719033 5.48906H0.718095L0.294345 5.65781C0.214086 5.68983 0.144238 5.7434 0.0925164 5.81262C0.0407947 5.88184 0.00921235 5.96401 0.0012581 6.05005C-0.00669616 6.1361 0.00928721 6.22266 0.0474427 6.30019C0.0855981 6.37772 0.144441 6.44319 0.21747 6.48938L0.601846 6.73313L0.602783 6.735L5.2856 9.71438L8.26497 14.3972L8.26684 14.3991L8.5106 14.7834C8.55693 14.8562 8.62244 14.9147 8.69991 14.9527C8.77738 14.9906 8.86381 15.0064 8.94968 14.9983C9.03556 14.9903 9.11755 14.9587 9.18663 14.9071C9.25571 14.8554 9.3092 14.7857 9.34122 14.7056L14.9662 0.643126ZM13.2478 2.415L6.22216 9.44063L6.0206 9.12375C5.98366 9.0656 5.93437 9.01631 5.87622 8.97938L5.55935 8.77781L12.585 1.75219L13.6893 1.31063L13.2487 2.415H13.2478Z" fill="#B61E2B"/>
+                                            </g>
+                                            <defs><clipPath id="clip0_1_31"><rect width="15" height="15" fill="white"/></clipPath></defs>
+                                        </svg>
+                                    </span></button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggle-widget" class="toggle-widget-btn secClr primary-clr float-end" onclick="addClassBtn()">
+                    <span class="text-light fw-bold">
+                        <img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_img rounded-circle image_preview" style="object-fit: cover;">
+                    </span> 
+                </button>
+                                  
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <script src="https://www.powersystemsdesign.com/psdbot/assets/scripts/jquery.js"></script> -->
+
+    
+    <script>
+    function addClassBtn(){
+        setTimeout(function(){
+            // console.log(document.getElementById('chat_widget').classList.contains("open"));
+            if(document.getElementById('chat_widget').classList.contains("open")){
+            $("#toggle-widget").addClass("active-btn");
+        } else{
+            $("#toggle-widget").removeClass("active-btn");                
+        }
+        }, 100);
+    }
+
+
+      kw = '';
+      var incoming_message_count=0;
+      $("#user_chat_contact-err").text("");
+      var feedBackDiv = '<div id = "feedbackDiv" class="panel"><div class="ratings-container"><p>How satisfied are you with our chatbot\'s performance?</p><form action="107.html" id="ratingForm"><fieldset class="rating"><input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label><input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label><input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label><input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label><input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label></fieldset><textarea name="feedback_comment" id="feedback_comment" placeholder="Comment..." rows="3" cols="30" ></textarea><input disabled type="submit" name="getVal" value="Send Review"></form></div></div>';
+      var feedBackbtn = '<button id = "showFeedbackBtn" onclick="showFeedback();" class="tooltip-container d-none shadow-none btn text-light p-0 fs-2 btn-transparent" style="display: block !important;background: transparent;color: #000 !important;border-radius: 100px !important;opacity: 1;/* font-weight: 700; */text-decoration: underline;border: 0;font-size: 1.3rem !important;line-height: 1.125rem;box-sizing: content-box;/* width: 20px; */height: 20px;outline: none;align-self: flex-end;margin-bottom: 12px;margin-top: 12px;"">Submit Feedback</button>';
+      var helpful = true;
+      var feedbackRecieved = false;
+
+
+        
+      $(document).ready(function() {
+          
+        $('.chat').append(feedBackbtn);
+        // Listen for form submit event
+        $('#messageForm').submit(function(e) {
+          // Prevent the form from submitting normally
+        //   e.preventDefault();
+        // Get the input value
+        var message = $('#message-input').val();
+        kw = message;
+        var tempMessage = (message.replace(/[^\w\s]/gi, '')).trim();
+        // console.log(message);
+        // Add the outgoing message to the chat container
+        if(message !='')
+        {
+          
+          incoming_message_count++;
+          $('.chat').append(`
+          <div class="message outgoing">
+            <div class="metadata">
+                <p class="metadata-top mb-0">
+                    <span class="sender-tag">You</span>
+                    <span class="bot-time" id="chat_time">${getTime()}</span>
+                </p>
+            </div>
+            <p class="chat-txt secClr">${message}</p>
+        </div>
+        `);
+        $('.chat').scrollTop($('.chat')[0].scrollHeight);
+        var appendMessage='';
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            message: message,
+            U62843:$("#U62843").val(),
+            C76149:$("#C76149").val(),
+            action:'ask_hercules',
+          },
+          beforeSend:function(){
+            
+          $(".indicator-div").show();
+          $('.chat').scrollTop($('.chat')[0].scrollHeight);
+          
+              $("#feedbackDiv").remove();
+              $("#showFeedbackBtn").remove();
+          
+          },
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            $(".indicator-div").hide();
+            
+            var id = new Date().getTime();
+            // Add the incoming message to the chat container ${result["Msg"]+appendMessage}
+            $('.chat').append(`
+                            <div class="message">
+                            <div class="metadata">
+                            <p class="metadata-top mb-0">
+                            <span class="sender-tag">PowerPal</span>
+                            <span class="bot-time" id="chat_time">${getTime()}</span>
+                                    </p>
+                                </div>
+                                <div class="chat-txt primaryClr" >
+                                <div class="flex justify-between lg:block" style="
+                                position: absolute;
+                                right: -19%;
+                                "><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"><div class="flex gap-1"><button onclick="vote(this,${result["Message_ID"]},1);" class="like" style="
+                                background: transparent;
+                                border: none;
+                                "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg></button><button onclick="vote(this,${result["Message_ID"]},-1);" class="" style="
+                                background: transparent;
+                                border: none;
+                                "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg></button></div></div></div>
+                                ${result["Msg"]}</div>
+                                </div>
+                            `);
+                $('.chat').append(feedBackbtn);
+                $('.chat').scrollTop($('.chat')[0].scrollHeight - $(".message").last().height() - $(".outgoing").last().height() - 80);
+                try{
+                    if(result.hasOwnProperty('cookie'))
+                    {
+                      result.cookie.forEach(element => {
+                        setCookie(element.key,element.value,30);
+                        $(document.getElementById(element.key)).val(element.value); 
+                      });
+                    }
+                  }
+                  catch(err){
+                    console.log(err);
+                  } 
+            if(!feedbackRecieved)
+            {
+                $("#showFeedbackBtn").removeClass("d-none");
+            }
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+
+        // Clear the input field after sending the message
+        $('#message-input').val('');
+        
+    }
+    return false
+      });
+});
+        
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Toggle the widget on button click
+            $('#toggle-widget').click(function() {
+                $('#chat_widget').toggleClass('open');
+                
+                // Change the button content to a cross when the chat_widget is open
+                if ($('#chat_widget').hasClass('open')) {
+                    $('#notSatisfiedBtn').css('display','block');
+                    $('#chat_widget').css('display','block');
+                    $('#toggle-widget').html(`<span class="text-light fw-bold">&times;</span>`);  
+                    try{
+                        $('.chat').scrollTop($('.chat')[0].scrollHeight - $(".message").last().height() - $(".outgoing").last().height() - 80);
+                    }
+                    catch(err){
+                        // console.log(err);
+                    }
+                } else {             
+                    $('#chat_widget').css('display','none');
+                    $('#notSatisfiedBtn').css('display','none');
+                    $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></i></span>`);
+                }
+                });
+                
+                // Close the widget when the close button is clicked
+                $('#chat_widget .close-widget').click(function() {
+                $('#chat_widget').removeClass('open');
+                $('#toggle-widget').removeClass('active-btn');
+                $('#chat_widget').css('display','none');
+                $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></span>`);
+                $('#notSatisfiedBtn').css('display','none');
+                });
+                 
+            });
+            
+            // Close the widget when the Esc key is pressed
+            $(document).keydown(function(event) {
+                if (event.keyCode == 27) {
+                $('#toggle-widget').removeClass('active-btn');
+                $('#chat_widget').removeClass('open');
+                $('#chat_widget').css('display','none');
+                $('#toggle-widget').html(`<span class="text-light fw-bold"><img src="../assets/imgs/Group_1.png" alt="Open" class="avtar_bz rounded-circle" style="object-fit: cover;"></i></span>`);
+                $('#notSatisfiedBtn').css('display','none');
+                
+            }
+        });
+    </script>
+    
+    <script>
+        window.addEventListener('resize', positionChatbot);
+
+        function positionChatbot() {
+        var container = document.getElementById('chatContainer');
+        var chatbotContainer = document.querySelector('.bot_sec');
+
+        var containerWidth = container.offsetWidth;
+        var chatbotWidth = chatbotContainer.offsetWidth;
+        var rightPosition = containerWidth - chatbotWidth - 20; // Adjust the padding if needed
+
+        chatbotContainer.style.right = (window.innerWidth - containerWidth + 15)/2 + 'px';
+        }
+
+        // Call the positionChatbot function initially
+        positionChatbot();
+        function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = ";SameSite=None;Secure;expires=" + date.toUTCString();
+            
+        }
+        document.cookie = name + "=" + (`'${value}'` || "")  + expires + "; path=/";
+        
+    }
+    $(document).ready(function() {
+   $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
+    function redirectToSponsor(sponsor,link){
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            sponsor: sponsor,
+            action:'sponsor_clicked'
+          },
+          
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            window.open(link,"_blank");
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+    }
+
+    // Feedback functions
+    function submitRating(){
+        const valueStars = document.querySelector('input[name="rating"]:checked').value;
+        $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            stars: valueStars,
+            comment:$("#feedback_comment").val(),
+            U62843:$("#U62843").val(),
+            C76149:$("#C76149").val(),
+            action:'submitFeedback',
+          },
+          
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            showThankyou(valueStars);
+            
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+          
+      }
+      function showThankyou(val) {
+          const starText = val > 1 ? 'stars' : 'star';
+          const panel = document.querySelector('.panel');
+          panel.innerHTML = `
+              <span class="fa-heart"></span>
+              <h1>Thank you!</h1>
+              <br>
+              <strong>Feedback: ${val} ${starText}</strong>
+              <p>We'll use your feedback to improve our support.</p>
+          `;
+      }
+      function handleChange() {
+        const inputRatings = document.querySelectorAll('input[name="rating"]');
+        const submitBtn = document.querySelector('input[name="getVal"]');
+        
+        inputRatings.forEach(input => {
+            // console.log(input);
+            input.addEventListener('change', () => {
+                // console.log("clicked stars");
+                // submitBtn.disabled = false;
+                if (input.checked === true) {
+                    submitBtn.disabled = false;
+                    $(submitBtn).removeAttr("disabled");
+                }
+            })
+        })
+        }
+        function vote(elem,message_id,value){
+          $.ajax({
+          url: 'https://www.powersystemsdesign.com/psdbot/embedding.php',
+          type: 'POST',
+          data: {
+            value: value,
+            message_id:message_id,
+            action:'voteConversation',
+          },
+          beforeSend:function(){
+            var parent = elem.parentNode;
+            var children = parent.children;
+            for(var i=0;i< children.length;i++)
+            {
+              var nestedChildren = children[i].children; // Assuming you want to target the first level of children
+              for(var j=0;j< nestedChildren.length;j++)
+                nestedChildren[j].setAttribute("fill", "none");
+            }
+          },
+          success: function(msg) {
+            // console.log(msg);
+            result = JSON.parse(msg);
+            if(value === 0)
+            {
+                if($(elem).hasClass("like"))
+                {
+                    $(elem).attr("onclick","vote(this,"+message_id+",1)");
+                }
+                else
+                {
+                    $(elem).attr("onclick","vote(this,"+message_id+",-1)");
+                }
+            }
+            else
+            {
+                $(elem).attr("onclick","vote(this,"+message_id+",0)");
+                if(value === 1)
+                {
+                  $(elem).children("svg").attr("fill","#E3BF4B");
+                }
+                else
+                {
+                  $(elem).children("svg").attr("fill","#B61E2B");
+                  $(elem).children("svg").attr("fill","#B61E2B");
+                }
+            }
+          },
+          error: function(xhr, status, error) {
+            // Handle errors
+            console.log(error);
+          }
+        });
+        }
+        function showFeedback(){
+            if($("#feedbackDiv").length != 0)
+            {
+                $("#feedbackDiv").toggleClass("d-none");
+                $('.chat').scrollTop($('.chat')[0].scrollHeight);
+                return;
+            }
+            $('.chat').append(feedBackDiv);
+                $('#ratingForm').submit(function(e) {
+                    submitRating();
+                    return false;
+                });
+                $('.chat').scrollTop($('.chat')[0].scrollHeight);
+                handleChange();
+        }
+    </script>
+</body>
+
+</html><script type="text/javascript">
+function check_character_length(field_id,max_allowed,print_result_span_id)
+{
+    var words_length = document.getElementById(field_id).value;
+    var remaining_characters=max_allowed-words_length.length;
+    if(words_length.length==max_allowed)
+    {
+        toastr.error("You cannot enter more than "+max_allowed+" characters");
+        $("#"+print_result_span_id).html(remaining_characters+" characters remaining");
+        $("#"+field_id).focus();
+    }
+    else 
+    {
+        $("#"+print_result_span_id).html(remaining_characters+" characters remaining");
+    }
+}
+function write_review(aid){
+    $("#addratings").modal('show');
+    $("#artid_rating").val(aid);
+}
+function submit_rating(){
+    var feedback=$("#feedback_comment").val();
+    //console.log(feedback);
+    var rating=$("#reviews-rating").val();
+    var artid_rating=$("#artid_rating").val();
+    //console.log(rating);
+    if($("#reviews-rating").val().trim()==""){
+
+        alert("Please give your ratings");
+        $("#reviews-rating").focus();
+        return false;
+    }else{
+        $.ajax({
+                type:"POST",
+                url:"https://www.powersystemsdesign.com/ajax.php",
+                data:{
+                action:"updaterating",
+                ratingno:$("#reviews-rating").val(),
+                feedback:$('#feedback_comment').val(),
+                artid_rating:$('#artid_rating').val()
+            },
+            success:function(msg)
+            {
+                alert("Thank you for your feedback");
+                setTimeout(function(){ location.reload(); }, 100);
+            }
+        });
+    }
+} 
+// $(document).ready(function(){
+//     var currnt_image_list= '';
+//     var substr = currnt_image_list.split(','); 
+//     for(var i = 0;i < substr.length;i++){
+//         (function(){
+//             var ii = i;
+//             setTimeout(function(){
+//                 var get_htmlresource=$("#htmlmp-"+substr[ii]).val();
+//                 var get_article_name=$("#article_name-"+substr[ii]).val();
+
+//                 var aid=$("#artid_disp-"+substr[ii]).val();
+//                 $.ajax({
+//                     type:"POST",
+//                     url:"https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//                     data:{
+//                         action:"getdata",
+//                         get_htmlresource:get_htmlresource,
+//                         get_article_name:get_article_name,
+//                         aid:aid
+
+//                     },
+//                     success:function(html)
+//                     {
+//                         $("#audio_player_tag-"+substr[ii]).html(html);
+//                     }
+//                 });
+//                 //console.log(ii);
+//             },10);
+//         })();
+//     }
+// });
+
+// $(document).ready(function () {
+//     var currnt_image_list = '';
+//     var substr = currnt_image_list.split(',').filter(Boolean); // Ensure no empty values
+//     var batchSize = 25; // Load 25 at a time
+//     var loadedCount = 0; // Track how many are loaded
+
+//     // Add loader to indicate loading process
+//     // $("body").append('<div id="loading-indicator" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">Generating audio files, please wait....</div>');
+
+//     function loadNextBatch() {
+//         if (loadedCount >= substr.length) {
+//             // $("#loading-indicator").fadeOut(); // Hide loader when done
+//             // return;
+//         }
+
+//         var remaining = substr.length - loadedCount;
+//         var loadLimit = Math.min(batchSize, remaining);
+//         var startIndex = loadedCount;
+
+//         console.log(`Loading ${loadLimit} audio files starting from index ${startIndex}...`);
+
+//         var requests = []; // Store AJAX requests
+
+//         for (var i = 0; i < loadLimit; i++) {
+//             (function (index) {
+//                 var ii = startIndex + index;
+//                 if (ii >= substr.length) return;
+
+//                 var htmlmpElement = $("#htmlmp-" + substr[ii]);
+//                 var audioTagElement = $("#audio_player_tag-" + substr[ii]);
+
+//                 if (!htmlmpElement.length || !audioTagElement.length) return;
+
+//                 var get_htmlresource = htmlmpElement.val();
+//                 var get_article_name = $("#article_name-" + substr[ii]).val();
+//                 var aid = $("#artid_disp-" + substr[ii]).val();
+
+//                 // Push each AJAX request to array
+//                 requests.push(
+//                     $.ajax({
+//                         type: "POST",
+//                         url: "https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//                         data: {
+//                             action: "getdata",
+//                             get_htmlresource: get_htmlresource,
+//                             get_article_name: get_article_name,
+//                             aid: aid
+//                         },
+//                         success: function (html) {
+//                             audioTagElement.html(html);
+//                         },
+//                         error: function (jqXHR, textStatus, errorThrown) {
+//                             console.error(`Error loading audio ${substr[ii]}: ${textStatus}, ${errorThrown}`);
+//                         }
+//                     })
+//                 );
+//             })(i);
+//         }
+
+//         // Wait for all requests in this batch to complete before proceeding
+//         $.when.apply($, requests).done(function () {
+//             loadedCount += loadLimit; // Update loaded count
+//             console.log(`Loaded ${loadedCount} items so far...`);
+
+//             // Load next batch after 1 second
+//             setTimeout(loadNextBatch, 500);
+//         });
+//     }
+
+//     // Start loading first batch
+//     loadNextBatch();
+// });
+
+// $(document).ready(function () {
+//     var currnt_image_list = '';
+//     var substr = currnt_image_list.split(',').filter(Boolean); // Ensure no empty values
+//     var loadedCount = 0; // Track processed items
+//     var preloadCount = 2; // Number of initial audios to generate
+
+//     function generateAudio(index, callback) {
+//         if (index >= substr.length) {
+//             if (callback) callback(); // If last item, trigger callback
+//             return;
+//         }
+
+//         let htmlmpElement = $("#htmlmp-" + substr[index]);
+//         let audioTagElement = $("#audio_player_tag-" + substr[index]);
+
+//         if (!htmlmpElement.length || !audioTagElement.length) {
+//             if (callback) callback();
+//             return;
+//         }
+
+//         let get_htmlresource = htmlmpElement.val();
+//         let get_article_name = $("#article_name-" + substr[index]).val();
+//         let aid = $("#artid_disp-" + substr[index]).val();
+
+//         $.ajax({
+//             type: "POST",
+//             url: "https://www.powersystemsdesign.com/ajax_audio_psdcast.php",
+//             data: {
+//                 action: "getdata",
+//                 get_htmlresource: get_htmlresource,
+//                 get_article_name: get_article_name,
+//                 aid: aid
+//             },
+//             success: function (html) {
+//                 audioTagElement.html(html);
+//                 if (callback) callback();
+//             },
+//             error: function () {
+//                 if (callback) callback();
+//             }
+//         });
+//     }
+
+//     // Preload first 5 audios
+//     function preloadFirstBatch() {
+//         let completed = 0;
+//         for (let i = 0; i < Math.min(preloadCount, substr.length); i++) {
+//             generateAudio(i, function () {
+//                 completed++;
+//                 if (completed === preloadCount) {
+//                     // After preloading first 5, start sequential loading
+//                     $(window).on("load", function () {
+//                         loadNext(preloadCount);
+//                     });
+//                 }
+//             });
+//         }
+//     }
+
+//     // Sequentially load remaining audios
+//     function loadNext(startIndex) {
+//         if (startIndex >= substr.length) return;
+
+//         generateAudio(startIndex, function () {
+//             setTimeout(() => loadNext(startIndex + 1), 10); // Wait 200ms before the next request
+//         });
+//     }
+
+//     // Start preloading
+//     preloadFirstBatch();
+// });
+
+
+$(document).ready(function () {
+    var currnt_image_list = '';
+    var substr = currnt_image_list.split(',').filter(Boolean);
+    
+    // Add CSS for the loading indicator
+    $("<style>")
+        .prop("type", "text/css")
+        .html(`
+            .audio-loading-indicator {
+                background: #f5f5f5;
+                border-radius: 5px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                width: 100%;
+                max-width: 500px;
+                margin: 20px auto;
+            }
+            .audio-loading-spinner {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 4px solid rgba(74, 144, 226, 0.3);
+                border-radius: 50%;
+                border-top-color: #4a90e2;
+                animation: spin 1s ease-in-out infinite;
+                margin-bottom: 10px;
+            }
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        `)
+        .appendTo("head");
+    
+    // Only initialize visible audio players on page load
+    initVisibleAudioPlayers();
+    
+    // On scroll, check and initialize players that come into view
+    $(window).on('scroll', debounce(checkAndInitPlayers, 200));
+    
+    function initVisibleAudioPlayers() {
+        substr.forEach(function(id, index) {
+            let audioContainer = $("#audio_player_tag-" + id);
+            if (audioContainer.length && isElementInViewport(audioContainer[0])) {
+                initSingleAudioPlayer(id);
+            }
+        });
+    }
+    
+    function checkAndInitPlayers() {
+        substr.forEach(function(id) {
+            let audioContainer = $("#audio_player_tag-" + id);
+            if (audioContainer.length && 
+                isElementInViewport(audioContainer[0]) && 
+                !audioContainer.hasClass('initialized')) {
+                initSingleAudioPlayer(id);
+            }
+        });
+    }
+    
+    function initSingleAudioPlayer(id) {
+        let audioTagElement = $("#audio_player_tag-" + id);
+        if (audioTagElement.hasClass('initialized')) return;
+        
+        let get_htmlresource = $("#htmlmp-" + id).val();
+        let get_article_name = $("#article_name-" + id).val();
+        let aid = $("#artid_disp-" + id).val();
+        
+        // Add a more visible loading indicator with animation
+        audioTagElement.html(`
+            <div class="audio-loading-indicator">
+                <div class="audio-loading-spinner"></div>
+                <div>Loading audio player...</div>
+            </div>
+        `);
+        
+        $.ajax({
+            type: "POST",
+            url: "https://www.powersystemsdesign.com/ajax_audio_psdcast_test.php",
+            data: {
+                action: "getdata",
+                get_htmlresource: get_htmlresource,
+                get_article_name: get_article_name,
+                aid: aid
+            },
+            success: function (html) {
+                audioTagElement.html(html);
+                
+                audioTagElement.addClass('initialized');
+                
+                // Make sure the play button starts in the correct state
+                // Find the player and play button in the newly loaded content
+                const player = audioTagElement.find("audio")[0];
+                const playBtn = audioTagElement.find(".play-button")[0];
+                
+                if (player && playBtn) {
+                    // Start with proper play state (not paused)
+                    $(playBtn).removeClass("pause");
+                    
+                    // Add loading class to play button until audio is ready
+                    $(playBtn).addClass("loading");
+                    
+                    player.addEventListener('waiting', function() {
+                        if (playBtn) playBtn.classList.add('loading');
+                        console.log("event ", "waiting");
+                    });
+
+                    player.addEventListener('playing', function() {
+                        if (playBtn) playBtn.classList.remove('loading');
+                        console.log("event ", "playing");
+                    });
+                    
+                    // Once the audio is ready to play, remove loading state
+                    $(player).on('canplay', function() {
+                        $(playBtn).removeClass("loading");
+                    });
+                    
+                    // Handle errors
+                    $(player).on('error', function() {
+                        $(playBtn).removeClass("loading");
+                        $(playBtn).addClass("error");
+                    });
+                }
+                // updatePlayButtonHandlers();
+            },
+            error: function() {
+                audioTagElement.html(`
+                    <div class="audio-loading-indicator" style="color: #f44336;">
+                        <div>Error loading audio player. Please try again.</div>
+                    </div>
+                `);
+            }
+        });
+    }
+    
+    // Helper functions
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                func.apply(context, args);
+            }, wait);
+        };
+    }
+
+    // $(document).on('click', '.play-button', function() {
+        
+    // });
+
+    function updatePlayButtonHandlers() {
+        // Remove any duplicate click handlers first to avoid conflicts
+        // $(document).off('click', '.play-button');
+        
+        // // Add a new handler that doesn't conflict with the inline one
+        // $(document).on('click', '.play-button', function(e) {
+        //     const playBtn = $(this);
+        //     const audioId = playBtn.closest('[id^="audio_player_tag-"]').attr('id').split('-')[1];
+        //     const player = document.getElementById("player-" + audioId);
+            
+        //     if (!player) return;
+            
+        //     if (player.paused) {
+        //         // Add loading state while attempting to play
+        //         // playBtn.addClass("loading");
+                
+        //         // Use promise to handle play success/failure
+        //         // player.play().then(function() {
+        //         //     playBtn.removeClass("loading");
+        //         //     playBtn.addClass("pause");
+        //         // }).catch(function(error) {
+        //         //     playBtn.removeClass("loading");
+        //         //     console.log("Play error handled:", error.message);
+        //         //     // If the error was due to user interruption, don't show error state
+        //         //     if (error.name !== "AbortError") {
+        //         //         playBtn.addClass("error");
+        //         //     }
+        //         // });
+        //     } else {
+        //         player.pause();
+        //         playBtn.removeClass("pause loading");
+        //     }
+
+        //     if (!playBtn.hasClass('pause') && !playBtn.hasClass('loading')) {
+        //         playBtn.addClass('loading');
+        //     }
+        // });
+    }
+
+    // Call this after initializing players
+    // updatePlayButtonHandlers();
+
+    // run first 5
+    substr.forEach(function(id, index) {
+        if (index < 5) { // Only process the first 5 elements
+            setTimeout(()=>{
+                let audioContainer = $("#audio_player_tag-" + id);
+                if (audioContainer.length ) {
+                    initSingleAudioPlayer(id);
+                }
+            },1000*index)
+        }
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+function callexternallink(link,artid){
+    var val=link;
+    var artid=artid;
+    var filename = "https://www.powersystemsdesign.com/ajax.php?action=linkclicked&artid="+ artid +"&externallink="+val;
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr){
+            if(data=="success"){
+                window.location.href=val;
+            }
+        },
+        error: function (xhr, textStatus, errorThrown){
+        }
+    });
+}
+function view_podcast_icons(artid){
+    $("#podcast_displays-"+artid).show();
+}
+</script>
+<script>
+$('#closepopup_psdcast').click(function(){
+    $('#psdcastmodal').modal('hide');
+    document.getElementById("backgradient").style.display = "none";
+});
+function validateEmail($email) 
+{
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if( !emailReg.test( $email ) ) 
+    {
+        return false;
+    } 
+    else 
+    {
+        return true;
+    }
+}
+function PSDcastForm()
+{
+    var error=0;
+
+    if($("#PSDcastEmail").val()=="")
+    {
+        error++;
+        alert("Email address is required!");
+        $("#PSDcastEmail").focus();
+        return false;
+    }
+    if(!validateEmail($("#PSDcastEmail").val())) 
+    {
+        error++;
+        alert("Email address is invalid!");
+        $("#PSDcastEmail").focus();
+        return false;
+    }
+    if(error<=0)
+    {
+        saveJoinPSDCast();
+    }
+}
+function saveJoinPSDCast()
+{
+    var filename = "https://www.powersystemsdesign.com/ajax.php?action=saveJoinPSDCastForm&"+$("#psdastmodal").serialize();
+    $.ajax({
+        url: filename,
+        type: 'GET',
+        dataType: 'html',
+        beforeSend: function () {
+        },
+        success: function (data, textStatus, xhr) 
+        {
+            var dataArr = data.split("~"); 
+            if(dataArr[0]=="ERROR!"){
+                document.getElementById("err_msg_psdcast").innerHTML = dataArr[1];
+                setTimeout(function(){ location.reload(); }, 1500);
+            }else{
+                alert("Thank you for Subscribing");
+                setTimeout(function(){ location.reload(); }, 1500);
+                //$("#psdcastmodal").modal('hide');
+            }           
+                   
+            //$('#joinNewsletter')[0].reset();
+        },
+        error: function (xhr, textStatus, errorThrown) 
+        {
+            alert("Could not save due to some technical error");
+        }
+    }); 
+}
+function subscribe_to_psdcast(){
+     $('#psdcastmodal').modal('show');
+}
+function podcast_selected(click_url,artid,title){
+   $.ajax({
+      type:"POST",
+      url:"https://www.powersystemsdesign.com/ajax.php",
+      data:{
+         action:"podcast_view_save",
+         click_url:click_url,
+         artid:artid,
+         title:title
+      },
+      success:function(msg)
+      {
+         //window.open(click_url, '_blank');
+
+         window.location=click_url;
+         //$("#audio_player_tag-"+substr[ii]).html(html);
+      }
+   });
+}
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rating/1.4.0/bootstrap-rating.js"></script>
+<script type="text/javascript">
+    $(document).ready( function () {
+    $('#reviews-rating').rating({
+        filled: "fa fa-2x fa-star",
+        empty: "fa fa-2x fa-star-o",
+        fractions: 2,
+        extendSymbol: function (rate) {
+            $(this).tooltip({
+                container: "body",
+                placement: "bottom",
+                title: "Rate " + rate
+            });
+        }
+    })
+    .on('change', function () {
+        $('#reviews-rating-label').html($(this).val() + " Stars");
+    });
+});
+    function ratinggiven(){
+        $("#addratings").modal('show');
+    }
+
+</script>
+<script type="text/javascript">
+$.fn.stars = function() {
+    return $(this).each(function() {
+    var rating = $(this).data("rating");
+    var numStars = $(this).data("numStars");
+    //var aa=new Array(Math.floor(rating));
+    //console.log(aa);
+    //console.log(Math.floor(rating + 1));
+    var fullStar = new Array(Math.floor(rating)+1).join('<i class="fa fa-star"></i>');
+    //console.log(fullStar);
+    var halfStar = ((rating%1) !== 0) ? '<i class="fa fa-star-half-empty"></i>': '';
+    var noStar = new Array(Math.floor(numStars + 1 - rating)).join('<i class="fa fa-star-o"></i>');
+    $(this).html(fullStar + halfStar + noStar);
+    });
+}
+$('.stars').stars();
+function downloadmp(psdcast_url,article_name) {
+    $("#art_name").text(article_name);
+    $("#download_audio_file_url").val(psdcast_url)
+    $("#psdcast_audio_file").modal('show');
+}
+function download_audio_file(){
+    var audio_fileurl=$("#download_audio_file_url").val();
+    var artname=$("#art_name").text();
+    $("#psdcast_audio_file").modal('hide');
+    //setTimeout(function(){ window.location='https://www.powersystemsdesign.com/download_audio.php?audio_file_download='+audio_fileurl; }, 200);
+    setTimeout(function(){document.location.href = 'https://www.powersystemsdesign.com/download_audio.php?audio_file_download='+audio_fileurl+'&filename='+artname; },250);
+
+}
+</script>
